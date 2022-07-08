@@ -4,6 +4,78 @@
     box-sizing: border-box;
 }
 
-.header-top{
+.header-body{
+    margin: 0px 20px 20px 20px;
+}
+
+.header-body-top{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0px 15px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.header-body-bott{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 15px 0px 15px;
+
+}
+
+.main-navbar{
+    display: none;
+}
+
+.header-navbar{
+    display: flex;
+    list-style: none;
+}
+
+.header-contact{
+
+}
+
+
+
+
+
+footer {
+    display: none;
+}
+
+.whatsapp-button{
+    display: inline-block;
+    width: 50px;
+    height: 80px;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2;
+    z-index: 100;
+
+}
+
+@media (min-width:768px){
+    .burger-menu{
+        display: none;
+    }
+    .header-body-top{
+        max-width: 720px;
+    }
+
+}
+@media(min-width:1200px){
+    .header-body-top{
+        max-width: 720px;
+    }
+
 }
