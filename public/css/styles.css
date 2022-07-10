@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
 .header-body{
     margin: 0px 20px 20px 20px;
 }
 
 .header-body-top{
+    border: 1px red solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,6 +25,7 @@
 }
 
 .header-body-bott{
+    border: 1px red solid;
     display: flex;
     justify-content: space-between;
 
@@ -27,25 +33,22 @@
 
 }
 
-.main-navbar{
-    display: none;
+.header-body-navbar{
+    visibility: collapse;
 }
 
-.header-navbar{
+.header-body-navbar ul{
     display: flex;
     list-style: none;
 }
 
-.header-contact{
-
-}
 
 
 
 
 
 footer {
-    display: none;
+    visibility: collapse;
 }
 
 .whatsapp-button{
