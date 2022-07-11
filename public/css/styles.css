@@ -28,19 +28,27 @@ body{
     border: 1px red solid;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
     padding: 10px 15px 0px 15px;
-
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .header-body-navbar{
-    visibility: collapse;
+    display: none;
 }
 
-.header-body-navbar ul{
-    display: flex;
-    list-style: none;
+.burger-menu{
+    background-color: #03265c;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
 }
+
 
 
 
@@ -48,6 +56,7 @@ body{
 
 
 footer {
+    border: 1px red solid;
     visibility: collapse;
 }
 
@@ -74,6 +83,13 @@ footer {
     .header-body-top{
         max-width: 720px;
     }
+
+    .header-body-navbar ul{
+        display: flex;
+        list-style: none;
+    }
+    
+
 
 }
 @media(min-width:1200px){
