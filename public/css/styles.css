@@ -8,8 +8,8 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 
-.header-body{
-    margin: 0px 20px 20px 20px;
+header{
+    margin: 10px 20px 0px 20px;
 }
 
 .header-body-top{
@@ -21,7 +21,16 @@ body{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-
+}
+.header-contact{
+    text-decoration: none;
+    background-color: #00a1cd;
+    color: white;
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .header-body-bott{
@@ -30,8 +39,8 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px 0px 15px;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: auto;
 }
 
 .header-body-navbar{
@@ -49,10 +58,75 @@ body{
     font-size: 18px;
 }
 
+.section1-contacto{
+    text-align: center;
+    background-color: cadetblue;
+    padding-top: 10px;
+}
+.section1-titulo{
+    margin-bottom: 30px;
+}
+.titulo1{
+    /**/    
+}
+.titulo2{
+    font-weight: 400;
+}
+
+.formulario{
+    display: flex;
+    background-color:white;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+input, textarea  {
+    display: flex;
+    width: 500px;
+    padding: 5px;
+    margin: 10px 10px !important;
+}
+input:focus{
+    font-weight: bold;
+}
+.formulario button{
+    background-color: #00a1cd;
+    color: white;
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-left: 10px;
+}
+
+.section1-items{
+    border: 1px red solid;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.section1-items h4{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.section1-items i{
+    padding-right: 5px;
+    font-size: 30px;
+}
 
 
+/**/
+header{display: none;}
+.section1-contacto{display: none;}
 
-
+/**/
 
 
 footer {
