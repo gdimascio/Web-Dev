@@ -12,6 +12,8 @@ body{
 header{display: none !important;}
 .section1-contacto{display: none !important;}
 .section2-servicios{display: none !important;}
+.seccion3-beneficios{display: none !important;}
+/* .seccion-footer{display: none !important;} */
 
 /* Edicion de botones */
 .contacto-ya{
@@ -177,7 +179,7 @@ input:focus{
 /*_______________________________________________________________*/
 .section2-servicios{
     background-color: #ebebeb;
-    padding: 10px;
+    padding: 30px 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -242,7 +244,7 @@ input:focus{
 }
 .servicios-row h3{
     color: white;
-    background-color: #03265c;
+    background-color: #183f72;
     width: 200px;
     display: inline-block;
     text-align: center;
@@ -271,22 +273,64 @@ input:focus{
     text-decoration: underline ;
 }
 
+/*_______________________________________________________________*/
+.seccion3-beneficios{
+    margin: 30px 0;
+}
+.beneficios-checkbox{
+    margin: 20px 10vw;
+}
+.beneficios-checkbox label{
+    background-color: #00a1cd;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 70vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 70%;
+}
+.beneficios-checkbox p{
+    border: #00a1cd solid 1px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 80%;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 70vw;
+}
 
-
-
-
-
-
-
-
-
+/*_______________________________________________________________*/
 footer {
-    border: 1px red solid;
-    visibility: collapse;
+    background-color:#183f72;
+}
+.seccion-footer{
+    margin: 0 10vw;
+    padding: 30px 0;
+
+}
+.seccion-footer ul{
+    list-style: none;
+    text-decoration: none;
+
 }
 
 
 
+
+
+
+
+
+
+
+
+/*_______________________________________________________________*/
 @media (min-width:768px){
     .burger-menu{
         display: none;
