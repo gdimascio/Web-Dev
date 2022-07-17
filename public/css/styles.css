@@ -8,23 +8,13 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 
-header{
-    margin: 10px 20px 0px 20px;
+/* Colapsar modulos para concentracion de trabajo */
+header{display: none !important;}
+.section1-contacto{display: none !important;}
+.section2-servicios{display: none !important;}
 
-}
-
-.header-body-top{
-    border: 1px red solid;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px 0px 15px;
-    width: 90%;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-.header-contact{
+/* Edicion de botones */
+.contacto-ya{
     text-decoration: none;
     background-color: #00a1cd;
     color: white;
@@ -34,22 +24,6 @@ header{
     font-size: 18px;
     font-weight: bold;
 }
-
-.header-body-bott{
-    border: 1px red solid;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px 0px 15px;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-
-.header-body-navbar{
-    display: none;
-
-}
-
 .burger-menu{
     background-color: #03265c;
     color: white;
@@ -59,50 +33,8 @@ header{
     border-radius: 8px;
     text-align: center;
     font-size: 18px;
-    margin-right: 9vw;
 }
-
-.section1-contacto{
-    text-align: center;
-    background-color: cadetblue;
-    padding-top: 10px;
-}
-.section1-titulo{
-    margin-bottom: 30px;
-}
-.titulo1{
-    /**/
-    color: white;
-    animation-name: web;
-    animation-duration: 1000ms;
-
-}
-
-.titulo2{
-    font-weight: 400;
-}
-
-.formulario{
-    display: flex;
-    background-color:white;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-input, textarea  {
-    display: flex;
-    width: 50vw;
-    padding: 5px;
-    margin: 10px 10px !important;
-}
-input:focus{
-    font-weight: bold;
-}
-.formulario button{
+.section1-formulario button{
     background-color: #00a1cd;
     color: white;
     border-radius: 5px;
@@ -111,14 +43,123 @@ input:focus{
     font-size: 18px;
     font-weight: bold;
     display: block;
-    margin-left: 10px;
 }
-.formulario button:hover{
+.whatsapp-button{
+    display: inline-block;
+    width: 50px;
+    height: 80px;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2;
+    z-index: 100;
+}
+.todos-precios{
+    text-decoration: none;
+    background-color: #03265c;
+    color: white;
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
+
+
+header{
+    margin: 10px 20px 0px 20px;
+}
+
+.header-body-top{
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0px 15px;
+    width: 90%;
+    margin-right: 5vw;
+    margin-left: 7%;
+}
+.fa-clock{
+    color: #00a1cd;
+    padding-right: 3px;
+}
+.header-body-top h2{
+    font-size: 14px;
+    width: 30vw;
+}
+
+.header-body-bott{
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0px 15px;
+    margin-right: 12vw;
+    margin-left: 5%;
+}
+
+.header-body-navbar{
+    display: none;
+}
+
+/*_______________________________________________________________*/
+.section1-contacto{
+    text-align: center;
+    background-color: cadetblue;
+    padding: 10px;
+}
+.section1-titulo{
+    margin: 40px 0;
+}
+.titulo1{
+    color: white;
+}
+.titulo2{
+    font-weight: 400;
+    opacity: 70%;
+}
+.section1-formulario{
+    display: flex;
+    background-color:white;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 3vw;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.section1-formulario div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+
+}
+.section1-formulario h3{
+    color: #183f72 ;
+}
+
+input, textarea  {
+    display: flex;
+    width: 60vw;
+    padding: 5px;
+    margin: 10px 2vw !important;
+}
+input:focus{
+    font-weight: bold;
+}
+.section1-formulario button{
+    margin-left: 10px;
 }
 
 .section1-items{
-    border: 1px red solid;
+    /* border: 1px red solid; */
     margin: 10px;
     margin-left: 10%;
     margin-right: 10%;
@@ -133,12 +174,110 @@ input:focus{
     font-size: 30px;
 }
 
+/*_______________________________________________________________*/
+.section2-servicios{
+    background-color: #ebebeb;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+}
+.servicios-encabezado{
+    display: flex;
+    align-items: center;
+    margin: 0 10vw;
+}
+.servicios-encabezado span{
+    display: inline-block;
+    width: 50px;
+    border-bottom: 3px solid #CCC;
+    border-bottom-color: #00a1cd;
+}
+.servicios-encabezado h3{
+    color: #00a1cd;
+    margin-left: 15px;
+}
+.servicios-intro{
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.servicios-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+.servicios-titulo h2{
+    color: #03265c;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: #00a1cd underline ;
+    text-decoration-style: wavy;
+}
+.servicios-titulo p{
+    text-align: left;
+    width: 50vw;
+}
+.servicios-buttons{
+    margin: 30px 0;
+}
+.servicios-buttons a{
+    margin: 0 10px;
+}
+.servicios-row div{
+    background-color: white;
+    margin: 10vh 15vw;
+    padding: 25px;
+}
+.servicios-row a{
+    text-decoration: none;
+    color: black;
+}
+.servicios-row h4{
+    color: #03265c;
+    margin-top: 10px;
+}
+.servicios-row h3{
+    color: white;
+    background-color: #03265c;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.servicios-row h2{
+    font-size: 35px;
+    opacity: 80%;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.servicios-row p{
+    margin: 35px 0;
+    font-size: 20px;
+}
+.servicios-row b{
+    padding: 10px 0;
+}
+.mas-info{
+    color: #00a1cd;
+    display: inline-block;
+}
+.mas-info:hover{
+    text-decoration: underline ;
+}
 
-/*
-header{display: none;}
-.section1-contacto{display: none;}
 
-/**/
+
+
+
+
+
+
 
 
 footer {
@@ -146,21 +285,7 @@ footer {
     visibility: collapse;
 }
 
-.whatsapp-button{
-    display: inline-block;
-    width: 50px;
-    height: 80px;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 50px;
-    right: 15px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    line-height: 1.2;
-    z-index: 100;
 
-}
 
 @media (min-width:768px){
     .burger-menu{
