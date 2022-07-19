@@ -9,10 +9,10 @@ body{
 }
 
 /* Colapsar modulos para concentracion de trabajo */
-header{display: none !important;}
-.section1-contacto{display: none !important;}
-.section2-servicios{display: none !important;}
-.seccion3-beneficios{display: none !important;}
+/* header{display: none !important;} */
+/* .section1-contacto{display: none !important;} */
+/* .section2-servicios{display: none !important;} */
+/* .seccion3-beneficios{display: none !important;} */
 /* .seccion-footer{display: none !important;} */
 
 /* Edicion de botones */
@@ -71,19 +71,17 @@ header{display: none !important;}
     font-weight: bold;
 }
 
-
-
+/*_______________________________________________________________*/
 header{
-    margin: 10px 20px 0px 20px;
+    margin: 20px 20px 0px 20px;
 }
-
 .header-body-top{
     /* border: 1px red solid; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px 0px 15px;
-    width: 90%;
+    /* width: 90%; */
     margin-right: 5vw;
     margin-left: 7%;
 }
@@ -95,17 +93,15 @@ header{
     font-size: 14px;
     width: 30vw;
 }
-
 .header-body-bott{
     /* border: 1px red solid; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px 0px 15px;
-    margin-right: 12vw;
+    padding: 10px 60px 0px 15px;
+    margin-right: 5vw;
     margin-left: 5%;
 }
-
 .header-body-navbar{
     display: none;
 }
@@ -114,7 +110,7 @@ header{
 .section1-contacto{
     text-align: center;
     background-color: cadetblue;
-    padding: 10px;
+    padding: 50px 10px;
 }
 .section1-titulo{
     margin: 40px 0;
@@ -141,12 +137,10 @@ header{
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 10px;
-
 }
 .section1-formulario h3{
     color: #183f72 ;
 }
-
 input, textarea  {
     display: flex;
     width: 60vw;
@@ -159,10 +153,9 @@ input:focus{
 .section1-formulario button{
     margin-left: 10px;
 }
-
 .section1-items{
     /* border: 1px red solid; */
-    margin: 10px;
+    margin: 30px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -174,6 +167,13 @@ input:focus{
 .section1-items i{
     padding-right: 5px;
     font-size: 30px;
+}
+.section1-inicio{
+    display: flex;
+    background-color: #CCC;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /*_______________________________________________________________*/
@@ -312,22 +312,37 @@ footer {
 .seccion-footer{
     margin: 0 10vw;
     padding: 30px 0;
-
+    color: white;
 }
 .seccion-footer ul{
     list-style: none;
-    text-decoration: none;
-
 }
-
-
-
-
-
-
-
-
-
+.seccion-footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer-titulo{
+    font-size: 35px;
+    opacity: 80%;
+    margin: 15px 0;
+}
+.links {
+    margin: 15px;
+    margin-top: 20px;
+    opacity: 80%;
+    font-size: 20px;
+}
+.links h5{
+    font-size: 20px;
+    opacity: 60%;
+    margin-bottom: 10px;
+}
+.links i{
+    padding: 5px;
+}
+.algunos-servicios{
+    display: none;
+}
 
 
 /*_______________________________________________________________*/
@@ -335,17 +350,28 @@ footer {
     .burger-menu{
         display: none;
     }
-
+    .header-body-navbar{
+        display: inline-block;
+        width: 50vw ;
+    }
     .header-body-navbar ul{
         display: flex;
         list-style: none;
+        justify-content: space-around;
     }
-    
-
+    .header-body-navbar a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .header-body-navbar a:hover{
+        color: #00a1cd;
+    }
 }
-@media(min-width:1200px){
-    .header-body-top{
-        max-width: 720px;
-    }
 
+/*_______________________________________________________________*/
+@media(min-width:1200px){
+    
+    
 }
