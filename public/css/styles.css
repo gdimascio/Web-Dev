@@ -9,8 +9,8 @@ body{
 }
 
 /* Colapsar modulos para concentracion de trabajo */
-/* header{display: none !important;} */
-/* .section1-contacto{display: none !important;} */
+header{display: none !important;}
+.section1-contacto{display: none !important;}
 /* .section2-servicios{display: none !important;} */
 /* .seccion3-beneficios{display: none !important;} */
 /* .seccion-footer{display: none !important;} */
@@ -229,20 +229,29 @@ input:focus{
 .servicios-buttons a{
     margin: 0 10px;
 }
-.servicios-row div{
-    background-color: white;
-    margin: 10vh 15vw;
-    padding: 25px;
+.servicios-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vw;
 }
-.servicios-row a{
+.servicios-paquetes{
+    background-color: white;
+    padding: 25px;
+    margin: 10vh;
+}
+.paquetes-precios{
     text-decoration: none;
     color: black;
 }
-.servicios-row h4{
+.row-image{
+    width: 50vw;
+}
+.servicios-paquetes h4{
     color: #03265c;
     margin-top: 10px;
 }
-.servicios-row h3{
+.servicios-paquetes h3{
     color: white;
     background-color: #183f72;
     width: 200px;
@@ -252,17 +261,17 @@ input:focus{
     margin-bottom: 10px;
     font-size: 25px;
 }
-.servicios-row h2{
+.servicios-paquetes h2{
     font-size: 35px;
     opacity: 80%;
     margin: 10px 0;
     font-weight: 400;
 }
-.servicios-row p{
+.servicios-paquetes p{
     margin: 35px 0;
     font-size: 20px;
 }
-.servicios-row b{
+.servicios-paquetes b{
     padding: 10px 0;
 }
 .mas-info{
@@ -372,6 +381,18 @@ footer {
 
 /*_______________________________________________________________*/
 @media(min-width:1200px){
-    
+    .servicios-row{
+        margin: 5vh 10vw;
+        flex-direction: row;
+        width: 80vw;
+        align-items: normal;
+    }
+    .servicios-paquetes{
+        margin: 0 auto;
+        width: 25vw;
+    }
+    .row-image{
+        width: 10vw;
+    }
     
 }
