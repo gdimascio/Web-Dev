@@ -9,13 +9,19 @@ body{
 }
 
 /* Colapsar modulos para concentracion de trabajo */
-header{display: none !important;}
-.section1-contacto{display: none !important;}
+/* header{display: none !important;} */
+/* .section1-contacto{display: none !important;} */
 /* .section2-servicios{display: none !important;} */
 /* .seccion3-beneficios{display: none !important;} */
 /* .seccion-footer{display: none !important;} */
 
 /* Edicion de botones */
+.button:hover{
+    opacity: 80%;
+}
+.button:active{
+    box-shadow: 2px 2px 5px #03265c;
+}
 .contacto-ya{
     text-decoration: none;
     background-color: #00a1cd;
@@ -36,7 +42,7 @@ header{display: none !important;}
     text-align: center;
     font-size: 18px;
 }
-.section1-formulario button{
+.enviar-button{
     background-color: #00a1cd;
     color: white;
     border-radius: 5px;
@@ -115,12 +121,30 @@ header{
 .section1-titulo{
     margin: 40px 0;
 }
+/* TODO: agragar animacion al background-color: #212529*/
 .titulo1{
     color: white;
+    padding: 5px;
+    display: inline-block;
+    animation-name: highlightAnim;
+    animation-duration: 3s;
+    border-radius: 8px;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes highlightAnim {
+    0%{}
+    100%{
+        background-color: #212529;
+        -webkit-transition: background-color 1000ms linear;
+        -ms-transition: background-color 1000ms linear;
+        transition: background-color 1000ms linear;
+    }
 }
 .titulo2{
     font-weight: 400;
     opacity: 70%;
+    z-index: 1;
 }
 .section1-formulario{
     display: flex;
@@ -235,6 +259,9 @@ input:focus{
     align-items: center;
     margin: 10vw;
 }
+.servicios-paquetes:hover{
+    border: 2px solid #00a1cd;
+}
 .servicios-paquetes{
     background-color: white;
     padding: 25px;
@@ -312,7 +339,23 @@ input:focus{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 70vw;
+    display: block;
+    /* display: none; */
 }
+.beneficios-checkbox:visited{
+    background-color: #03265c;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*_______________________________________________________________*/
 footer {
