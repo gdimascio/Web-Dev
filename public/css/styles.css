@@ -12,7 +12,7 @@ body{
 /* header{display: none !important;} */
 /* .section1-contacto{display: none !important;} */
 /* .section2-servicios{display: none !important;} */
-/* .seccion3-beneficios{display: none !important;} */
+/* .section3-beneficios{display: none !important;} */
 /* .seccion-footer{display: none !important;} */
 
 /* Edicion de botones */
@@ -131,11 +131,12 @@ header{
     border-radius: 8px;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 @keyframes highlightAnim {
     0%{}
     100%{
-        background-color: #212529;
+        background-color: black;
         -webkit-transition: background-color 1000ms linear;
         -ms-transition: background-color 1000ms linear;
         transition: background-color 1000ms linear;
@@ -209,18 +210,18 @@ input:focus{
     text-align: center;
     align-items: flex-start;
 }
-.servicios-encabezado{
+.encabezado-intro{
     display: flex;
     align-items: center;
     margin: 0 10vw;
 }
-.servicios-encabezado span{
+.encabezado-intro span{
     display: inline-block;
     width: 50px;
     border-bottom: 3px solid #CCC;
     border-bottom-color: #00a1cd;
 }
-.servicios-encabezado h3{
+.encabezado-intro h3{
     color: #00a1cd;
     margin-left: 15px;
 }
@@ -261,6 +262,7 @@ input:focus{
 }
 .servicios-paquetes:hover{
     border: 2px solid #00a1cd;
+    box-shadow: -1px 1px 4px #03265c;
 }
 .servicios-paquetes{
     background-color: white;
@@ -310,7 +312,7 @@ input:focus{
 }
 
 /*_______________________________________________________________*/
-.seccion3-beneficios{
+.section3-beneficios{
     margin: 30px 0;
 }
 .beneficios-checkbox{
@@ -374,9 +376,14 @@ footer {
     color: white;
 }
 .footer-titulo{
-    font-size: 35px;
     opacity: 80%;
     margin: 15px 0;
+}
+.footer-titulo h4{
+    font-size: 35px;
+}
+.footer-titulo h6{
+    font-size: 22px;
 }
 .links {
     margin: 15px;
