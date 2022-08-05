@@ -1,0 +1,11 @@
+
+Paleta de Colores:
+#03265c;
+#00a1cd;
+#183f72;
+#CCC;
+#ebebeb
+cadetblue;
+
+Tipografia:
+Familia: 'Barlow'
