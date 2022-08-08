@@ -240,9 +240,10 @@ input:focus{
 .servicios-buttons{
     display: flex;
     margin: 30px 0;
+    flex-direction: column;
 }
 .servicios-buttons a{
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 .servicios-row{
     display: flex;
@@ -432,6 +433,14 @@ footer {
         line-height: 1.2;
         z-index: 100;
     }
+    .servicios-buttons{
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0;
+    }
+    .servicios-buttons a{
+        margin: 0 10px;
+    }
     
 }
 
@@ -464,6 +473,13 @@ footer {
         line-height: 1.2;
         z-index: 100;
     }
-    
-    
+    .servicios-buttons{
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0;
+    }
+    .servicios-buttons a{
+        margin: 0 10px;
+    }
+
 }
