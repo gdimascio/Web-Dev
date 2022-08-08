@@ -53,18 +53,7 @@ body{
     display: block;
 }
 .whatsapp-button{
-    display: inline-block;
-    width: 50px;
-    height: 80px;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 50px;
-    right: 15px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    line-height: 1.2;
-    z-index: 100;
+    display: none;
 }
 .todos-precios{
     text-decoration: none;
@@ -429,6 +418,21 @@ footer {
     .header-body-navbar a:hover{
         color: #00a1cd;
     }
+    .whatsapp-button{
+        display: inline-block;
+        width: 50px;
+        height: 80px;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 50px;
+        right: 15px;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1.2;
+        z-index: 100;
+    }
+    
 }
 
 /*_______________________________________________________________*/
@@ -446,5 +450,20 @@ footer {
     .row-image{
         width: 10vw;
     }
+    .whatsapp-button{
+        display: inline-block;
+        width: 50px;
+        height: 80px;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 50px;
+        right: 15px;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1.2;
+        z-index: 100;
+    }
+    
     
 }
