@@ -29,7 +29,7 @@ body{
     border-radius: 5px;
     max-width: 500px;
     padding: 15px;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: bold;
 }
 .burger-menu{
@@ -68,7 +68,7 @@ body{
 
 /*_______________________________________________________________*/
 header{
-    margin: 20px 20px 0px 20px;
+    margin: 20px 20px 10px 20px;
 }
 .header-body-top{
     /* border: 1px red solid; */
@@ -79,21 +79,23 @@ header{
     /* width: 90%; */
     margin-right: 5vw;
     margin-left: 7%;
+    font-size: 12px;
+    
 }
 .fa-clock{
     color: #00a1cd;
     padding-right: 3px;
 }
 .header-body-top h2{
-    font-size: 14px;
-    width: 30vw;
+    font-size: 12px;
+    /* width: 30vw; */
 }
 .header-body-bott{
     /* border: 1px red solid; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px 0px 15px;
+    padding: 10px 15px 0px 15px;
     margin-right: 5vw;
     margin-left: 5%;
 }
@@ -104,8 +106,8 @@ header{
 /*_______________________________________________________________*/
 .section1-contacto{
     text-align: center;
-    background-color: cadetblue;
-    padding: 50px 10px;
+    background-color: #CCC;
+    padding: 10px;
 }
 .section1-titulo{
     margin: 40px 0;
@@ -143,6 +145,7 @@ header{
     flex-direction: column;
     align-items: flex-start;
     padding: 30px 3vw;
+    margin-bottom: 30px;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -169,7 +172,7 @@ input:focus{
 }
 .section1-items{
     /* border: 1px red solid; */
-    margin: 30px;
+    margin-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -202,7 +205,7 @@ input:focus{
 .encabezado-intro{
     display: flex;
     align-items: center;
-    margin: 0 10vw;
+    margin-left: 10vw;
 }
 .encabezado-intro span{
     display: inline-block;
@@ -215,7 +218,7 @@ input:focus{
     margin-left: 15px;
 }
 .servicios-intro{
-    margin: 0 10vw;
+    margin-left: 10vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -230,12 +233,12 @@ input:focus{
     color: #03265c;
     font-weight: 700;
     margin-bottom: 10px;
-    text-decoration: #00a1cd underline ;
-    text-decoration-style: wavy;
+    /* text-decoration: #00a1cd underline ;
+    text-decoration-style: wavy; */
 }
 .servicios-titulo p{
     text-align: left;
-    width: 50vw;
+    width: 80vw;
 }
 .servicios-buttons{
     display: flex;
@@ -249,7 +252,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vw;
+    margin: 5vw 10vw;
 }
 .servicios-paquetes:hover{
     border: 2px solid #00a1cd;
@@ -257,8 +260,8 @@ input:focus{
 }
 .servicios-paquetes{
     background-color: white;
-    padding: 25px;
-    margin: 10vh;
+    padding: 5vw;
+    margin: 5vw 10vw;
 }
 .paquetes-precios{
     text-decoration: none;
@@ -280,6 +283,7 @@ input:focus{
     border-radius: 8px;
     margin-bottom: 10px;
     font-size: 25px;
+    padding-bottom: 2px;
 }
 .servicios-paquetes h2{
     font-size: 35px;
@@ -396,8 +400,15 @@ footer {
 
 
 
+
 /*_______________________________________________________________*/
 @media (min-width:768px){
+    .header-body-top{
+        font-size: 15px;
+    }
+    .header-body-top h2{
+        font-size: 15px;
+    }
     .burger-menu{
         display: none;
     }
@@ -408,7 +419,7 @@ footer {
     .header-body-navbar ul{
         display: flex;
         list-style: none;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .header-body-navbar a{
         text-decoration: none;
@@ -446,7 +457,13 @@ footer {
 
 /*_______________________________________________________________*/
 @media(min-width:1200px){
-    .servicios-row{
+    .header-body-top{
+        font-size: 18px;
+    }
+    .header-body-top h2{
+        font-size: 18px;
+    }
+.servicios-row{
         margin: 5vh 10vw;
         flex-direction: row;
         width: 80vw;
