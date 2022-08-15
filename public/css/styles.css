@@ -9,11 +9,11 @@ body{
 }
 
 /* Colapsar modulos para concentracion de trabajo */
-/* header{display: none !important;} */
-/* .section1-contacto{display: none !important;} */
+header{display: none !important;}
+.section1-contacto{display: none !important;}
 /* .section2-servicios{display: none !important;} */
-/* .section3-beneficios{display: none !important;} */
-/* .seccion-footer{display: none !important;} */
+.section3-beneficios{display: none !important;}
+.seccion-footer{display: none !important;}
 
 /* Edicion de botones */
 .button:hover{
@@ -101,7 +101,7 @@ body{
 .header-body-navbar{
     display: none;
 }
-#burger-links{
+.burger-links{
     display: none;
     list-style: none;
     background-color: #00a1cd;
@@ -110,12 +110,12 @@ body{
     justify-content: space-between;
     height: 150px;
 }
-#burger-links a{
+.burger-links a{
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
-#burger-links a:hover{
+.burger-links a:hover{
     color: #03265c;
 }
 
@@ -269,7 +269,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5vw 10vw;
+    margin: 5vw 0;
 }
 .servicios-paquetes:hover{
     border: 2px solid #00a1cd;
@@ -420,7 +420,7 @@ footer {
 
 /*_______________________________________________________________*/
 @media (min-width:768px){
-    #burger-links{
+    .burger-links{
         display: none;
     }
     .header-body-top{
@@ -477,7 +477,7 @@ footer {
 
 /*_______________________________________________________________*/
 @media(min-width:1200px){
-    #burger-links{
+    .burger-links{
         display: none;
     }
     .header-body-top{

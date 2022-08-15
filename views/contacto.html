@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&display=swap" rel="stylesheet">
-    
+    <script type="text/javascript" src="../public/js/script.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHPHEMM100"></script>
     <script>
@@ -28,26 +29,35 @@
     
 <body>
     <header>
-        <div class="header-body-top">
-            <h2><i class="fa-solid fa-clock"></i>Atención 24/7</h2>
-            <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="contacto-ya header-contact button">CONTACTANOS YA!</a>
-        </div>
-
-        <div class="header-body-bott">
-            <div class="header-body-logo">
-                <img src="../public/img/logo.PNG" alt="LOGO" class="logo">
+        <div class="header-body-main">
+            <div class="header-body-top">
+                <h2><i class="fa-solid fa-clock"></i>Atención 24/7</h2>
+                <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="contacto-ya header-contact button">CONTACTANOS YA!</a>
             </div>
 
-            <a href="#" class="burger-menu"><i class="fas fa-bars"></i></a>
+            <div class="header-body-bott">
+                <div class="header-body-logo">
+                    <img src="../public/img/logo.PNG" alt="LOGO" class="logo">
+                </div>
 
-            <nav class="header-body-navbar">
-                <ul>
-                    <li><a href="../home.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
-                    <li><a href="./precios.html">Precios</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                <a href="javascript:void(0);" class="burger-menu" onclick="burger_menu()"><i class="fas fa-bars"></i></a>
+
+                <nav class="header-body-navbar">
+                    <ul>
+                        <li><a href="../home.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                        <li><a href="./precios.html">Precios</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+
+        <div class="header-body-links burger-links" id="_burger-links">
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="./precios.html">Precios</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </div>
+
     </header>
 
     <section class="section1-inicio">
@@ -56,7 +66,6 @@
             <h2 class="titulo2">de fácil acceso</h2>
         </div>
     </section>
-
 
     <section class="section1-contacto">
         <div class="section1-formulario">
