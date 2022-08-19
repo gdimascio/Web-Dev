@@ -25,7 +25,6 @@
 <title>GD</title>
 </head>
 
-
 <body>
     <!-- HEADER -->
     <header>
@@ -45,8 +44,8 @@
                 <nav class="header-body-navbar">
                     <ul>
                         <li><a href="./home.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
-                        <li><a href="./views/precios.html">Precios</a></li>
-                        <li><a href="./views/contacto.html">Contacto</a></li>
+                        <li><a href="#servicios">Precios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,16 +53,15 @@
 
         <div class="header-body-links burger-links" id="_burger-links">
             <li><a href="./home.html">Home</a></li>
-            <li><a href="./views/precios.html">Precios</a></li>
-            <li><a href="./views/contacto.html">Contacto</a></li>
+            <li><a href="#servicios">Precios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </div>
 
     </header>
 
-
     <main>
         <!-- Seccion 1: Contacto -->
-        <section class="section1-contacto">
+        <section class="section1-contacto" id="contacto">
             <div class="section1-titulo">
                 <h2 class="titulo1"><span class="background-anim"></span>Diseños Web</h2>
                 <h2 class="titulo2">de fácil acceso</h2>
@@ -90,7 +88,7 @@
         </section>
 
         <!-- Seccion 2: Servicios -->
-        <section class="section2-servicios">
+        <section class="section2-servicios" id="servicios">
             <div class="encabezado-intro">
                 <span></span>
                 <h3>Servicios</h3>
@@ -102,7 +100,7 @@
                     <p class="servicios-titulo2">Todos nuestros paquetes de Diseño Web incluyen Hosting y dominio gratis durante el primer año.</p>
                 </div>
                 <div class="servicios-buttons">
-                    <a href="./views/precios.html" class="todos-precios servicios-precios button">TODOS LOS PRECIOS</a>
+                    <a href="#servicios" class="todos-precios servicios-precios button">TODOS LOS PRECIOS</a>
                     <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="contacto-ya servicios-contact button">CONTACTANOS YA!</a>
                 </div>    
             </div>
@@ -238,6 +236,9 @@
     <div>
         <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="whatsapp-button">
             <img src="./public/img/WhatsApp.png" width="60px" alt>
+        </a>
+        <a href="./home.html" class="scroll-to-top-button ">
+            <i class="fa-solid fa-chevron-up"></i>
         </a>
     </div>
 

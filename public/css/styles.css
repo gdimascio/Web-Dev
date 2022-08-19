@@ -55,6 +55,9 @@ body{
 .whatsapp-button{
     display: none;
 }
+.scroll-to-top-button{
+    display: none;
+}
 .todos-precios{
     text-decoration: none;
     background-color: #03265c;
@@ -463,6 +466,31 @@ footer {
         text-decoration: none;
         line-height: 1.2;
         z-index: 100;
+    }
+    .scroll-to-top-button{
+        display: inline-block;
+        width: 50px;
+        height: 80px;
+        padding: 10px 0;
+        position: fixed;
+        bottom: -25px;
+        right: 10px;
+        color: #ffffff;
+        background-color: black;
+        opacity: 70%;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1.2;
+        z-index: 100;
+        max-width: 50px;
+        border-radius: 8px;
+        font-size: 18px;
+        
+        transition: opacity 0.3s;
+    
+    }
+    .scroll-to-top-button :hover{
+        color: #00a1cd;
     }
     .servicios-buttons{
         display: flex;
