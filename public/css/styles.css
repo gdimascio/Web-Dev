@@ -183,6 +183,7 @@ input, textarea  {
     width: 55vw;
     padding: 5px;
     margin: 10px 2vw !important;
+    resize: vertical;
 }
 input:focus{
     font-weight: bold;
