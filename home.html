@@ -237,10 +237,12 @@
         <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="whatsapp-button">
             <img src="./public/img/WhatsApp.png" width="60px" alt>
         </a>
-        <a href="./home.html" class="scroll-to-top-button ">
-            <i class="fa-solid fa-chevron-up"></i>
-        </a>
-    </div>
+        <button onclick="topFunction()" id="_top-btn" class="scroll-to-top-button" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+        <script>
+            var mybutton = document.getElementById("_top-btn");
+            window.onscroll = function() {scrollFunction()};
+        </script>
+</div>
 
 </body>
 </html>
