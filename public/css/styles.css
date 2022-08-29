@@ -10,15 +10,17 @@ body{
 }
 
 /* Colapsar modulos para concentracion de trabajo */
-/*header{display: none !important;}*/
-/*.section1-contacto{display: none !important;}*/
+header{display: none !important;}
+.section1-contacto{display: none !important;}
 /* .section2-servicios{display: none !important;} */
-/*.section3-beneficios{display: none !important;}*/
-/*.seccion-footer{display: none !important;}*/
+.section3-beneficios{display: none !important;}
+.seccion-footer{display: none !important;}
 
 /* Edicion de botones */
 .button:hover{
     opacity: 80%;
+    cursor: pointer;
+    user-select : none;
 }
 .button:active{
     box-shadow: 2px 2px 5px #03265c;
@@ -270,6 +272,22 @@ input:focus{
 .servicios-buttons a{
     margin: 10px 10px;
 }
+/*-------------------------------------------------------------------------------------------------------------*/
+.prev, .next{ 
+    position: absolute;
+    top: 75%;
+    left: 0;
+    color: #03265c;
+    width: auto;
+    padding: 0 3vw;
+    font-size: 30px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.next {
+    left: 86vw;
+}
+
 .servicios-row{
     display: flex;
     flex-direction: column;
@@ -289,6 +307,7 @@ input:focus{
     text-decoration: none;
     color: black;
 }
+
 .row-image{
     width: 50vw;
 }
