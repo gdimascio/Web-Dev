@@ -106,7 +106,7 @@
             </div>
 
             <div class="servicios-row carrusel">
-                <div class="servicios-paquetes" id="langing_page">
+                <div class="servicios-paquetes fade" id="langing_page">
                     <a href="./views/precios.html" class="paquetes-precios">
                         <img class="row-image" src="./public/img/logo_servicios.png" alt="">
                         <h4>DISEÑO WEB</h4>
@@ -122,7 +122,7 @@
                     </a>
                 </div>
 
-                <div class="servicios-paquetes" id="simple">
+                <div class="servicios-paquetes fade" id="simple">
                     <a href="./views/precios.html" class="paquetes-precios">
                         <img class="row-image" src="./public/img/logo_servicios.png" alt="">
                         <h4>DISEÑO WEB</h4>
@@ -139,7 +139,7 @@
                     </a>
                 </div>
 
-                <div class="servicios-paquetes" id="tienda_online">
+                <div class="servicios-paquetes fade" id="tienda_online">
                     <a href="./views/precios.html" class="paquetes-precios">
                         <img class="row-image" src="./public/img/logo_servicios.png" alt="">
                         <h4>DISEÑO WEB</h4>
@@ -161,15 +161,16 @@
             </div>
             <br>
 
-            <div>
+            <div style="text-align:center; align-items:center">
                 <span class="dot" onclick="currentSlide(1)"></span> 
                 <span class="dot" onclick="currentSlide(2)"></span> 
                 <span class="dot" onclick="currentSlide(3)"></span> 
             </div>
 
-
-
-
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+            </script>
         </section>
 
         <!-- Seccion 3: Beneficios -->
