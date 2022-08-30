@@ -10,11 +10,11 @@ body{
 }
 
 /* Colapsar modulos para concentracion de trabajo */
-header{display: none !important;}
-.section1-contacto{display: none !important;}
+/* header{display: none !important;} */
+/* .section1-contacto{display: none !important;} */
 /* .section2-servicios{display: none !important;} */
-.section3-beneficios{display: none !important;}
-.seccion-footer{display: none !important;}
+/* .section3-beneficios{display: none !important;} */
+/* .seccion-footer{display: none !important;} */
 
 /* Edicion de botones */
 .button:hover{
@@ -221,7 +221,6 @@ input:focus{
 .section2-servicios{
     background-color: #ebebeb;
     padding: 30px 10px;
-    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: flex-start;
@@ -272,10 +271,9 @@ input:focus{
 .servicios-buttons a{
     margin: 10px 10px;
 }
-/*-------------------------------------------------------------------------------------------------------------*/
 .prev, .next{ 
     position: absolute;
-    top: 75%;
+    top: 165vh;
     left: 0;
     color: #03265c;
     width: auto;
@@ -286,6 +284,27 @@ input:focus{
 }
 .next {
     left: 86vw;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
 }
 
 .servicios-row{
@@ -299,6 +318,7 @@ input:focus{
     box-shadow: -1px 1px 4px #03265c;
 }
 .servicios-paquetes{
+    display: none;
     background-color: white;
     padding: 5vw;
     margin: 5vw 10vw;
@@ -520,7 +540,15 @@ footer {
     .servicios-buttons a{
         margin: 0 10px;
     }
-    
+    .dot{
+        display: none;
+    }
+    .prev, .next{
+        display: none;
+    }
+    .servicios-paquetes{
+        display: flex !important;
+    }
 }
 
 /*_______________________________________________________________*/
@@ -568,6 +596,15 @@ footer {
     }
     .servicios-buttons a{
         margin: 0 10px;
+    }
+    .dot{
+        display: none;
+    }
+    .prev, .next{
+        display: none;
+    }
+    .servicios-paquetes{
+        display: flex !important;
     }
 }
 
