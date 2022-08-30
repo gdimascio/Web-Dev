@@ -273,7 +273,7 @@ input:focus{
 }
 .prev, .next{ 
     position: absolute;
-    top: 165vh;
+    top: 1650px;
     left: 0;
     color: #03265c;
     width: auto;
