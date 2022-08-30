@@ -189,25 +189,52 @@
 
             <div class="beneficios-checkbox">
 
-                <input type="checkbox" id="expand-toggle1" hidden/>
-                <label for="expand-toggle1">Soporte Directo</label>
-                <p>Botón incorporado de WhatsApp para que el cliente pueda contactarse directamente con tu empresa.</p>
+                <button class="accordion">Soporte Directo</button>
+                <div class="panel">
+                    <p>Botón incorporado de WhatsApp para que el cliente pueda contactarse directamente con tu empresa.</p>
+                </div>
 
-                <input type="checkbox" id="expand-toggle2" hidden/>
-                <label for="expand-toggle2">Diseño Responsive</label>
-                <p>Diseño adaptable a toda plataforma (<b>teléfono</b>, <b>tablet</b> y <b>PC</b>).</p>
+                <button class="accordion">Diseño Responsive</button>
+                <div class="panel">
+                    <p>Diseño adaptable a toda plataforma (<b>teléfono</b>, <b>tablet</b> y <b>PC</b>).</p>
+                </div>
 
-                <input type="checkbox" id="expand-toggle3" hidden/>
-                <label for="expand-toggle3">Enlazado con Redes Sociales</label>
-                <p>Vinculamos tu página web con tus redes sociales con un botón de acceso directo.</p>
+                <button class="accordion">Enlazado con Redes Sociales</button>
+                <div class="panel">
+                    <p>Vinculamos tu página web con tus redes sociales con un botón de acceso directo.</p>
+                </div>
 
-                <input type="checkbox" id="expand-toggle4" hidden/>
-                <label for="expand-toggle4">Estadísticas de Visitas</label>
-                <p>Instalamos Google Analytics para poder ver las visitas y todo tipo de estadísticas de tu página web.</p>
+                <button class="accordion">Estadísticas de Visitas</button>
+                <div class="panel">
+                    <p>Instalamos Google Analytics para poder ver las visitas y todo tipo de estadísticas de tu página web.</p>
+                </div>
 
-                <input type="checkbox" id="expand-toggle5" hidden/>
-                <label for="expand-toggle5">Correo Profesional</label>
-                <p>Obtendrás un mail con el nombre de tu empresa, esto inspira mayor confianza con tus futuros clientes.</p>
+                <button class="accordion">Correo Profesional</button>
+                <div class="panel">
+                    <p>Obtendrás un mail con el nombre de tu empresa, esto inspira mayor confianza con tus futuros clientes.</p>
+                </div>
+
+                <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                    });
+                }
+                </script>
+
             </div>
         </section>
 
