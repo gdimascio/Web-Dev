@@ -10,9 +10,9 @@ body{
 }
 
 /* Colapsar modulos para concentracion de trabajo */
-/* header{display: none !important;} */
-/* .section1-contacto{display: none !important;} */
-/* .section2-servicios{display: none !important;} */
+header{display: none !important;}
+.section1-contacto{display: none !important;}
+.section2-servicios{display: none !important;}
 /* .section3-beneficios{display: none !important;} */
 /* .seccion-footer{display: none !important;} */
 
@@ -446,15 +446,34 @@ input:focus{
 }
 
 /*_______________________________________________________________*/
-
-
-
-
-
-
-
-
-
+.seccion4-metodologia{
+    margin: 30px 0;
+    margin-bottom: 40px;
+}
+.metodologia-checkbox{
+    padding: 20px;
+    text-align: center;
+}
+.metodologia-checkbox-topic{
+    padding: 20px 0;
+}
+.metodologia-checkbox-topic i{
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: #00a1cd;
+    opacity: 70%;
+}
+.metodologia-checkbox-topic h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: #03265c;
+}
+.metodologia-checkbox-topic p{
+    font-size: 20px;
+    padding-bottom: 20px;
+    opacity: 60%;
+    font-weight: 400;
+}
 
 
 
@@ -609,6 +628,14 @@ footer {
     }
     .servicios-paquetes{
         display: flex !important;
+    }
+    .metodologia-checkbox{
+        display: flex;
+        justify-content: space-around;
+    }
+    .metodologia-checkbox-topic{
+        padding: 20px 10px;
+        max-width: 400px;
     }
 }
 
