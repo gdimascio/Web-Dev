@@ -267,8 +267,8 @@ input:focus{
     color: #03265c;
     font-weight: 700;
     margin-bottom: 10px;
-    /* text-decoration: #00a1cd underline ;
-    text-decoration-style: wavy; */
+    /* text-decoration: #00a1cd underline ; */
+    /* text-decoration-style: wavy; */
 }
 .servicios-titulo p{
     text-align: left;
@@ -380,23 +380,50 @@ input:focus{
 /*_______________________________________________________________*/
 .section3-beneficios{
     margin: 30px 0;
+    margin-bottom: 40px;
 }
 .beneficios-checkbox{
     margin: 20px 10vw;
 }
 .accordion{
-    background-color: #00a1cd;
+    background-color: white;
     padding: 20px;
     margin-top: 20px;
     display: inline-block;
     width: 70vw;
+    border: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     text-align: left;
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: 700;
-    opacity: 70%;
+    opacity: 100%;
+}
+.accordion:hover{
+    animation-name: accordion;
+    animation-duration: 0.5s;
+    color: #00a1cd;
+    border: solid #00a1cd 2px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+@keyframes accordion {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.accordion-active{
+    background-color: #00a1cd;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.accordion-active:hover{
+    background-color: #00a1cd;
+    color: white;
+    /* border: none; */
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 .beneficios-checkbox p{
     border: #00a1cd solid 1px;
@@ -417,6 +444,14 @@ input:focus{
     display: none;
     overflow: hidden;
 }
+
+/*_______________________________________________________________*/
+
+
+
+
+
+
 
 
 
