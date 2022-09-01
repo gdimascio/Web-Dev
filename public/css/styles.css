@@ -564,7 +564,6 @@ footer {
         z-index: 100;
     }
     .scroll-to-top-button{
-        display: none;
         width: 50px;
         height: 80px;
         padding-bottom: 20px;
@@ -581,11 +580,18 @@ footer {
         max-width: 50px;
         border-radius: 8px;
         font-size: 18px;
-        
+        border: none;
         transition: opacity 0.3s;
     }
-    .scroll-to-top-button :hover{
+    .scroll-to-top-button:hover{
         color: #00a1cd;
+        width: 50px;
+        height: 80px;
+
+        transition: background-color 0.2s linear;
+        transition: opacity 0.2s linear;
+        opacity: 100%;
+        background-color:#03265c;
     }
     .servicios-buttons{
         display: flex;
