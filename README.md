@@ -3,5 +3,4 @@ Pagina de venta de servicios Web
 
 
 - Analizar Logo e imagenes de 'Servicios'
-- Agregar animacion a topBtn (-)
 - Servicios: Mas Informacion
