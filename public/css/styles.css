@@ -294,7 +294,8 @@ input:focus{
     user-select: none;
 }
 .next {
-    left: 86vw;
+    left: unset;
+    right: 0;
 }
 .fade {
     animation-name: fade;
