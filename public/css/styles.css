@@ -295,7 +295,7 @@ input:focus{
 }
 .next {
     left: unset;
-    right: 0;
+    right: 0%;
 }
 .fade {
     animation-name: fade;
