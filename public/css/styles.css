@@ -8,6 +8,9 @@
 body{
     font-family: 'Barlow', sans-serif;
 }
+main{
+    border-top: #03265c solid 20px;
+}
 
 /* Colapsar modulos para concentracion de trabajo */
 /* header{display: none !important;} */
@@ -334,6 +337,7 @@ input:focus{
     background-color: white;
     padding: 5vw;
     margin: 5vw 10vw;
+    border-radius: 5px;
 }
 .paquetes-precios{
     text-decoration: none;
@@ -349,7 +353,7 @@ input:focus{
 .servicios-paquetes h3{
     color: white;
     background-color: #183f72;
-    width: 200px;
+    width: 230px;
     display: inline-block;
     text-align: center;
     border-radius: 8px;
