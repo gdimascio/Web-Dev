@@ -381,6 +381,36 @@ input:focus{
 .mas-info:hover{
     text-decoration: underline ;
 }
+.precios-index{
+    border: red solid 1px;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.precios-index-top{
+    display: none;
+}
+.precios-index-todos{
+    text-decoration: none;
+    color: #03265c;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.precios-index-paquete{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.precios-index-paquete:hover {
+    color: #00a1cd;
+    margin-left: 10px;
+    transition: margin-left 1s, color .3s;
+}
+
 
 /*_______________________________________________________________*/
 .section3-beneficios{
@@ -642,6 +672,13 @@ footer {
         padding: 20px 10px;
         max-width: 400px;
     }
+    .precios-index-top{
+        display: flex;
+    }
+    .precios-index-bot{
+        display: none;
+    }
+
 }
 
 /*_______________________________________________________________*/
