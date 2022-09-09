@@ -24,8 +24,6 @@
 
     <title>GD</title>
 </head>
-    
-
 <body>
     <header>
         <div class="header-body-main">
@@ -44,7 +42,7 @@
                 <nav class="header-body-navbar">
                     <ul>
                         <li><a href="../home.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
-                        <li><a href="#servicios">Precios</a></li>
+                        <li><a href="./precios.html">Precios</a></li>
                         <li><a href="../home.html">Contacto</a></li>
                     </ul>
                 </nav>
@@ -53,10 +51,9 @@
 
         <div class="header-body-links burger-links" id="_burger-links">
             <li><a href="../home.html">Home</a></li>
-            <li><a href="#servicios">Precios</a></li>
+            <li><a href="./precios.html">Precios</a></li>
             <li><a href="../home.html">Contacto</a></li>
         </div>
-
     </header>
 
     <main>
@@ -66,175 +63,153 @@
                 <h2 class="titulo2">de fácil acceso</h2>
             </div>
         </section>
-    
+
         <section class="section2-servicios" id="servicios">
             <div class="encabezado-intro">
                 <span></span>
                 <h3>Servicios</h3>
             </div>
-    
             <div class="servicios-intro">
                 <div class="servicios-titulo">
                     <h2 class="servicios-titulo1">Tarifas de Diseño Web</h2>
                     <p class="servicios-titulo2">Todos nuestros paquetes de Diseño Web incluyen Hosting y dominio gratis durante el primer año.</p>
                 </div>
+                <div class="servicios-buttons">
+                    <a href="../home.html" class="todos-precios servicios-precios button">VOLVER A INICIO</a>
+                    <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="contacto-ya servicios-contact button">CONTACTANOS YA!</a>
+                </div>    
             </div>
         </section>
 
-            <section>
-                <div class="servicios-row row1">
-                    <div class="servicios-paquetes" id="langing_page">
-                        <a href="./precios/1_landing_page.html" class="paquetes-precios">
-                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
-                            <h4>DISEÑO WEB</h4>
-                            <H3>LANDING PAGE</H3>
-                            <H2>AR$ 15.000.-</H2>
-                            <p>
-                                <b>Diseño web de landing page</b>
-                                o pagina de aterrizaje. Ideal para promocionar un producto y/o servicio específico.
-                                <br><br>
-                                <b>El costo incluye hosting y dominio por 1 año.</b>
-                            </p>
-                            <p class="mas-info">MÁS INFORMACIÓN</p>
-                        </a>
-                    </div>
+        <section class="servicios-precios">
+            <section class="precios-index">
+                <div class="precios-index-top">
+                    <a href="#servicios" class="precios-index-todos menus" onclick="currentPrecio(1)">Todos nuestros Diseños Web</a>
+            
+                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(2)">Diseño Web Landing Page</a>
+                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(3)">Diseño Web Simple</a>
+                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(3)">Diseño Web Simple +</a>
         
-                    <div class="servicios-paquetes" id="simple">
-                        <a href="./precios.html" class="paquetes-precios">
-                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
-                            <h4>DISEÑO WEB</h4>
-                            <H3>SIMPLE</H3>
-                            <H2>AR$ 24.000.-</H2>
-                            <p>
-                                El
-                                <b>Diseño web simple</b>
-                                es perfecto para pequeños negocios que quieren mostrar su producto. Incluye hasta 4 secciones y un total de 20 imágenes.
-                                <br><br>
-                                <b>El costo incluye hosting y dominio por 1 año.</b>
-                            </p>
-                            <p class="mas-info">MÁS INFORMACIÓN</p>
-                        </a>
-                    </div>
+                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(4)">Diseño Web Tienda Online</a>
+                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(4)">Diseño Web Tienda Online</a>
+                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(4)">Diseño Web Tienda Online</a>
         
-                    <div class="servicios-paquetes" id="simple+">
-                        <a href="./precios.html" class="paquetes-precios">
-                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
-                            <h4>DISEÑO WEB</h4>
-                            <H3>SIMPLE +</H3>
-                            <H2>AR$ 33.000.-</H2>
-                            <p>
-                                El
-                                <b>Diseño web simple</b>
-                                es perfecto para pequeños negocios que quieren mostrar su producto. Incluye hasta 6 secciones y un total de 40 imágenes.
-                                <br><br>
-                                <b>El costo incluye hosting y dominio por 1 año.</b>
-                            </p>
-                            <p class="mas-info">MÁS INFORMACIÓN</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="servicios-row row2">
-                    <div class="servicios-paquetes" id="tienda_online">
-                        <a href="./precios.html" class="paquetes-precios">
-                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
-                            <h4>DISEÑO WEB</h4>
-                            <H3>TIENDA ONLINE</H3>
-                            <H2>AR$ 52.000.-</H2>
-                            <p>
-                                Tu
-                                <b>Tienda Online</b>
-                                será totalmente autoadministrable.
-                                <br><br>
-                                <b>El costo incluye hosting y dominio por 1 año.</b>
-                            </p>
-                            <p class="mas-info">MÁS INFORMACIÓN</p>
-                        </a>
-                    </div>
-        
-                    <div class="servicios-paquetes" id="tienda_online">
-                        <a href="./precios.html" class="paquetes-precios">
-                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
-                            <h4>DISEÑO WEB</h4>
-                            <H3>TIENDA ONLINE +</H3>
-                            <H2>AR$ 79.000.-</H2>
-                            <p>
-                                Tu
-                                <b>Tienda Online</b>
-                                será totalmente autoadministrable.
-                                <br><br>
-                                <b>El costo incluye hosting y dominio por 1 año.</b>
-                            </p>
-                            <p class="mas-info">MÁS INFORMACIÓN</p>
-                        </a>
-                    </div>
-        
-                    <div class="servicios-paquetes" id="tienda_online">
-                        <a href="./precios.html" class="paquetes-precios">
-                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
-                            <h4>DISEÑO WEB</h4>
-                            <H3>TIENDA ONLINE ++</H3>
-                            <H2>AR$ 91.000.-</H2>
-                            <p>
-                                Tu
-                                <b>Tienda Online</b>
-                                será totalmente autoadministrable.
-                                <br><br>
-                                <b>El costo incluye hosting y dominio por 1 año.</b>
-                            </p>
-                            <p class="mas-info">MÁS INFORMACIÓN</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="servicios-row row3">
-                    <div class="servicios-paquetes" id="langing_page">
-                        <a href="./precios.html" class="paquetes-precios">
-                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
-                            <h4>DISEÑO WEB</h4>
-                            <H3>BLOG</H3>
-                            <H2>AR$ 38.000.-</H2>
-                            <p>
-                                Ideal para realizar una página web de noticias autoadministrable a tu medida.
-                                <br><br>
-                                <b>El costo incluye hosting y dominio por 1 año.</b>
-                            </p>
-                            <p class="mas-info">MÁS INFORMACIÓN</p>
-                        </a>
-                    </div>
-        
-                    <div class="servicios-paquetes" id="simple">
-                        <a href="./precios.html" class="paquetes-precios">
-                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
-                            <h4>DISEÑO WEB</h4>
-                            <H3>INMOBILIARIO</H3>
-                            <H2>AR$ 33.000.-</H2>
-                            <p>
-                                Portal inmobiliario para autoadministrar sus propiedades de forma sencilla y rapida.
-                                <br><br>
-                                <b>El costo incluye hosting y dominio por 1 año.</b>
-                            </p>
-                            <p class="mas-info">MÁS INFORMACIÓN</p>
-                        </a>
-                    </div>
-        
-                    <div class="servicios-paquetes" id="simple+">
-                        <a href="./precios.html" class="paquetes-precios">
-                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
-                            <h4>DISEÑO WEB</h4>
-                            <H3>AUTOGESTIONABLE</H3>
-                            <H2>AR$ 45.000.-</H2>
-                            <p>
-                                Podes crear tu negocio en linea administrando hasta 4 secciones y un total de 40 imagenes. Ideal para pequeños negocios que quieren mostrar su producto.
-                                <br><br>
-                                <b>El costo incluye hosting y dominio por 1 año.</b>
-                            </p>
-                            <p class="mas-info">MÁS INFORMACIÓN</p>
-                        </a>
-                    </div>
+                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(5)">Diseño Web Blog</a>
+                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(6)">Diseño Web Inmobiliario</a>
+                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(7)">Diseño Web Autogestionable</a>    
                 </div>
             </section>
+    
+            <section class="precios-todos">
+                <div class="paquete precios-intro" >
+                    <p>Saber concretamente el tema de tu sitio web y cuál es el objetivo, es la base en la cual se apoyará toda la estructura del proyecto.</p>
+                    <p>Ponete en <b>contacto</b> para acesorarte sin compromiso y brindar la mejor opción de página web para tu emprendimiento.</p>    
+                </div>
+
+                <div class="paquete precios-landing-page">
+                    <div>
+                        <p class="precios-todos-pregunta">¿Qué es una <b>Landing Page</b>?</p>
+                        <p>Una landing page es una página de aterrizaje, diseñada exclusivamente con un objetivo: llamar la atención de tus visitas y convertirlas en clientes.</p>
+                        <p>A diferencia de una Página Simple, la Landing Page debe estar enfocada en ser corta y llamativa al público, con contenido de calidad único, relevante y concentrado, sin distracciones que alejen al visitante de contactarte via WhatsApp </p>
+                        <br>
+                        <p class="precios-todos-pregunta">¿Por qué crear una Landing Page?</p>
+                        <p>La respuesta es simple: <b>resultados</b>.</p>
+                        <p>Una página de aterrizaje bien hecha permite que se tenga una tasa de ventas mucho más grande de lo que tiene un sitio web normal. No son extraños los casos en donde gracias a estas páginas, se aumenta la tasa de ventas en 5 o 10 veces más.</p>
+                        <p>Si queres vender un servicio o promocionar algo en particular, esta opción es para vos. Ponete en contacto para asesorarte sin compromiso y brindar la mejor opción de página web para tu emprendimiento.</p>    
+                    </div>
+                    <!-- <div class="paquete-data">
+                        <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                        <H3 class="servicios-row-paquete">LANDING PAGE</h3>
+                        <H2 class="servicios-row-precio">AR$ 15.000.-</h2>
+                    </div> -->
+                </div>
+
+                <div class="paquete precios-simple">
+                    <div>
+                        <p class="precios-todos-pregunta">¿Que es una <b>Web Simple</b>?</p>
+                        <p>Un Diseño Web Simple es una pagina con 4 botones diseñada para mostrar un producto o servicio de manera facil. Incluye hasta 20 imagenes.</p>
+                        <p>Su diseño simple permite transmitir su producto para captar la atención de los visitantes y conseguir ventas.</p>
+                        <p class="precios-todos-pregunta">¿Por qué crear una Pagina Web Simple?</p>
+                        <p>Si tu objetivo es publicar datos de contacto, catálogo de productos, tienda electrónica, las últimas noticias de la organización y materiales que ayudan a comprender mejor sus servicios, esta es la opcion para vos.</p>
+                        <p><b>Preguntá por el paquete Simple + y mejorá tu pagina web para que tenga 6 botones e incluya hasta 40 imagenes.</b></p>
+                    </div>
+                    <!-- <div class="paquete-data">
+                        <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                        <H3 class="servicios-row-paquete">SIMPLE</h3>
+                        <H2 class="servicios-row-precio">AR$ 24.000.-</h2>
+                    </div> -->
+                </div>
+
+                <div class="paquete precios-tienda" >
+                    <div>
+                        <p class="precios-todos-pregunta">¿Que es una <b>Tienda Online</b>?</p>
+                        <p>Una Tienda Online es la vitrina virtual donde los vendedores ponen a disposicion sus productos o servicios de forma agil y masiva todos los dias de la semana, las 24 horas y desde cualquier lugar.</p>
+                        <p>Esta pagina  cuentan con un diseño atractivo, navegacion facil e intuitiva y una interfaz que permita al comprador filtrar en detalle tus productos.</p>
+                        <p>Vas a poder subir tus productos, editarlos, modificarlos o simplemente bajarlos vos mismo gracias a nuestro diseño <b>autogestionable</b>.</p>
+                        <p><b>Preguntá por el paquete Tienda + y mejorá tu pagina web para que incluya hasta 40 productos o el paquete Tienda ++ para que incluya 60 productos.</b></p>
+                    </div>
+                    <!-- <div class="paquete-data">
+                        <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                        <H3 class="servicios-row-paquete">SIMPLE</h3>
+                        <H2 class="servicios-row-precio">AR$ 24.000.-</h2>
+                    </div> -->
+                </div>
+
+                <div class="paquete precios-blog">
+                    <div>
+                        <p class="precios-todos-pregunta">¿Qué es un <b>Blog</b>?</p>
+                        <p>En tu Blog, o Weblog, podrás publicar cualquier cosa que desees compartir con otros. Podrás actualizar periódicamente y recopilar cronológicamente textos y artículos de uno o varios autores (el más reciente aparece primero).</p>
+                        <p>Además, tus lectores podrán dejar sus comentarios en tus artículos.</p>
+                    </div>
+                </div>
+
+                <div class="paquete precios-inmobiliario">
+                    <p class="precios-todos-pregunta">¿Qué es una página <b>inmobiliaria</b>?</p>
+                    <p>Un portal inmobiliario es un sitio web orientado a ofrecer recursos y servicios relacionados a los inmuebles que ofrezca tu consultora de forma que permita la información del mercado a partir de listados de propiedades en venta o alquiler.</p>
+                    <p>Es una herramienta esencial para toda consultora inmobiliaria, que podrás autogestionar vos mismo.</p>
+                </div>
+
+                <div class="paquete precios-Autogestionable">
+                    <p>Diseño Web Autogestionable</p>
+                </div>
+            </section>
+        </section>
+
+
+
+
+
+        <section class="precios-index" >
+            <div class="precios-index-bot">
+                <a href="#servicios" class="precios-index-todos menus" onclick="currentPrecio(1)">Todos nuestros Diseños Web</a>
+            
+                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(2)">Diseño Web Landing Page</a>
+                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(3)">Diseño Web Simple</a>
+                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(3)">Diseño Web Simple +</a>
+    
+                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(4)">Diseño Web Tienda Online</a>
+                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(4)">Diseño Web Tienda Online</a>
+                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(4)">Diseño Web Tienda Online</a>
+    
+                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(5)">Diseño Web Blog</a>
+                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(6)">Diseño Web Inmobiliario</a>
+                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(7)">Diseño Web Autogestionable</a>    
+            </div>
+            
+            <script>
+                let precioIndex = 1;
+                showPrecio(precioIndex);
+            </script>
+    </section>
+
+
     </main>
+
+
+
+
+
+
 
     <footer>
         <section class="seccion-footer">
@@ -260,13 +235,11 @@
                     <li>Diseño Web - Simple</li>
                     <li>Diseño Web - Tienda Inicio</li>
                 </ul>
-                <a href="./precios.html">TODOS LOS DISEÑOS</a>
+                <a href="../precios.html">TODOS LOS DISEÑOS</a>
             </div>
         </section>
     </footer>
 
-
-    
     <div>
         <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="whatsapp-button">
             <img src="../public/img/WhatsApp.png" width="60px" alt>
