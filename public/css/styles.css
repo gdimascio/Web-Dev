@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
-
+a{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Barlow', sans-serif;
 }
@@ -346,11 +349,11 @@ input:focus{
 .row-image{
     width: 50vw;
 }
-.servicios-paquetes h4{
+.servicios-row-diseño{
     color: #03265c;
     margin-top: 10px;
 }
-.servicios-paquetes h3{
+.servicios-row-paquete{
     color: white;
     background-color: #183f72;
     width: 230px;
@@ -361,7 +364,7 @@ input:focus{
     font-size: 25px;
     padding-bottom: 2px;
 }
-.servicios-paquetes h2{
+.servicios-row-precio{
     font-size: 35px;
     opacity: 80%;
     margin: 10px 0;
@@ -380,35 +383,6 @@ input:focus{
 }
 .mas-info:hover{
     text-decoration: underline ;
-}
-.precios-index{
-    border: red solid 1px;
-    margin-left: 10vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.precios-index-top{
-    display: none;
-}
-.precios-index-todos{
-    text-decoration: none;
-    color: #03265c;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.precios-index-paquete{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.precios-index-paquete:hover {
-    color: #00a1cd;
-    margin-left: 10px;
-    transition: margin-left 1s, color .3s;
 }
 
 
@@ -511,8 +485,66 @@ input:focus{
 }
 
 
-
-
+/*_______________________________________________________________*/
+.servicios-precios{
+    display: flex;
+}
+.precios-index{
+    padding: 10px 0;
+    background-color:#ebebeb;
+}
+.precios-index-top{
+    background-color:#ebebeb;
+    display: none;
+    margin: 50px 5vw;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0;
+    padding-left: 5vw;
+    width: 30vw;
+}
+.precios-index-bot{
+    margin: 50px 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.precios-index-todos{
+    text-decoration: none;
+    color: #03265c;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.precios-index-paquete{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.precios-index-paquete:hover {
+    color: #00a1cd;
+    margin-left: 10px;
+    transition: margin-left 1s, color .3s;
+}
+.precios-todos div p{
+    margin: 40px 10vw;
+    text-align: justify;
+    font-size: 18px;
+    opacity: 80%;
+}
+.precios-todos-pregunta{
+    /* font-size: 25px !important; */
+    font-size: 2.5vw !important;
+    opacity: 100% !important;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.paquete-data{
+    text-align: center;
+    margin: 50px 0;
+}
 
 
 
@@ -675,8 +707,17 @@ footer {
     .precios-index-top{
         display: flex;
     }
+    .precios-index{
+        background-color: white;
+    }
     .precios-index-bot{
         display: none;
+    }
+    .precios-todos div p{
+        margin: 55px 0;
+        margin-right: 5vw;
+        /* font-size: 20px; */
+        font-size: 2vw;
     }
 
 }
