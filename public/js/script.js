@@ -34,11 +34,29 @@ function showSlides(n) {
     if (n > slides.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+        slides[i].style.display = "none";  
     }
     for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
+}
+
+
+function currentPrecio(n) {
+    showPrecio(precioIndex = n);
+}
+function showPrecio(n) {
+    let i;
+    let paquetes = document.getElementsByClassName("paquete");
+    let menu = document.getElementsByClassName("menus");
+    if (n > paquetes.length) {precioIndex = 1}    
+    if (n < 1) {precioIndex = paquetes.length}
+    for (i = 0; i < paquetes.length; i++) {
+        paquetes[i].style.display = "none";  
+    }
+    for (i = 0; i < menu.length; i++) {
+    }
+    paquetes[precioIndex-1].style.display = "block";  
 }
