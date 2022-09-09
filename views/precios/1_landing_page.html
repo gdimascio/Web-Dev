@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../public/css/styles.css">
-    <link rel="stylesheet" href="../../public/css/normalize.css">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="../public/css/normalize.css">
     <script src="https://kit.fontawesome.com/0fce3c0945.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="../../public/img/@.png">
+    <link rel="icon" href="../public/img/@.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="../../public/js/script.js"></script>
+    <script type="text/javascript" src="../public/js/script.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHPHEMM100"></script>
@@ -24,6 +24,8 @@
 
     <title>GD</title>
 </head>
+    
+
 <body>
     <header>
         <div class="header-body-main">
@@ -34,41 +36,43 @@
 
             <div class="header-body-bott">
                 <div class="header-body-logo">
-                    <img src="../../public/img/logo.PNG" alt="LOGO" class="logo">
+                    <img src="../public/img/logo.PNG" alt="LOGO" class="logo">
                 </div>
 
                 <a href="javascript:void(0);" class="burger-menu" onclick="burger_menu()"><i class="fas fa-bars"></i></a>
 
                 <nav class="header-body-navbar">
                     <ul>
-                        <li><a href="../../home.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
-                        <li><a href="../precios.html">Precios</a></li>
-                        <li><a href="../../home.html">Contacto</a></li>
+                        <li><a href="../home.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                        <li><a href="#servicios">Precios</a></li>
+                        <li><a href="../home.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
 
         <div class="header-body-links burger-links" id="_burger-links">
-            <li><a href="../../home.html">Home</a></li>
-            <li><a href="../precios.html">Precios</a></li>
-            <li><a href="../../home.html">Contacto</a></li>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="#servicios">Precios</a></li>
+            <li><a href="../home.html">Contacto</a></li>
         </div>
+
     </header>
 
     <main>
         <section class="section1-inicio">
             <div class="section1-titulo">
                 <h2 class="titulo1">Diseños Web</h2>
-                <h2 class="titulo2">Landing Page</h2>
+                <h2 class="titulo2">de fácil acceso</h2>
             </div>
         </section>
-
+    
         <section class="section2-servicios" id="servicios">
             <div class="encabezado-intro">
                 <span></span>
                 <h3>Servicios</h3>
             </div>
+    
             <div class="servicios-intro">
                 <div class="servicios-titulo">
                     <h2 class="servicios-titulo1">Tarifas de Diseño Web</h2>
@@ -77,81 +81,160 @@
             </div>
         </section>
 
-        <section class="precios-index precios-index-top">
-                <a href="../precios.html" class="precios-index-todos">Todos los diseños web</a>
-                
-                <a href="#" class="precios-index-paquete">Diseño Web Landing Page</a>
-                <a href="#" class="precios-index-paquete">Diseño Web Simple</a>
-                <a href="#" class="precios-index-paquete">Diseño Web Simple +</a>
+            <section>
+                <div class="servicios-row row1">
+                    <div class="servicios-paquetes" id="langing_page">
+                        <a href="./precios/1_landing_page.html" class="paquetes-precios">
+                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
+                            <h4>DISEÑO WEB</h4>
+                            <H3>LANDING PAGE</H3>
+                            <H2>AR$ 15.000.-</H2>
+                            <p>
+                                <b>Diseño web de landing page</b>
+                                o pagina de aterrizaje. Ideal para promocionar un producto y/o servicio específico.
+                                <br><br>
+                                <b>El costo incluye hosting y dominio por 1 año.</b>
+                            </p>
+                            <p class="mas-info">MÁS INFORMACIÓN</p>
+                        </a>
+                    </div>
+        
+                    <div class="servicios-paquetes" id="simple">
+                        <a href="./precios.html" class="paquetes-precios">
+                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
+                            <h4>DISEÑO WEB</h4>
+                            <H3>SIMPLE</H3>
+                            <H2>AR$ 24.000.-</H2>
+                            <p>
+                                El
+                                <b>Diseño web simple</b>
+                                es perfecto para pequeños negocios que quieren mostrar su producto. Incluye hasta 4 secciones y un total de 20 imágenes.
+                                <br><br>
+                                <b>El costo incluye hosting y dominio por 1 año.</b>
+                            </p>
+                            <p class="mas-info">MÁS INFORMACIÓN</p>
+                        </a>
+                    </div>
+        
+                    <div class="servicios-paquetes" id="simple+">
+                        <a href="./precios.html" class="paquetes-precios">
+                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
+                            <h4>DISEÑO WEB</h4>
+                            <H3>SIMPLE +</H3>
+                            <H2>AR$ 33.000.-</H2>
+                            <p>
+                                El
+                                <b>Diseño web simple</b>
+                                es perfecto para pequeños negocios que quieren mostrar su producto. Incluye hasta 6 secciones y un total de 40 imágenes.
+                                <br><br>
+                                <b>El costo incluye hosting y dominio por 1 año.</b>
+                            </p>
+                            <p class="mas-info">MÁS INFORMACIÓN</p>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="#" class="precios-index-paquete">Diseño Web Tienda Online</a>
-                <a href="#" class="precios-index-paquete">Diseño Web Tienda Online +</a>
-                <a href="#" class="precios-index-paquete">Diseño Web Tienda Online ++</a>
+                <div class="servicios-row row2">
+                    <div class="servicios-paquetes" id="tienda_online">
+                        <a href="./precios.html" class="paquetes-precios">
+                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
+                            <h4>DISEÑO WEB</h4>
+                            <H3>TIENDA ONLINE</H3>
+                            <H2>AR$ 52.000.-</H2>
+                            <p>
+                                Tu
+                                <b>Tienda Online</b>
+                                será totalmente autoadministrable.
+                                <br><br>
+                                <b>El costo incluye hosting y dominio por 1 año.</b>
+                            </p>
+                            <p class="mas-info">MÁS INFORMACIÓN</p>
+                        </a>
+                    </div>
+        
+                    <div class="servicios-paquetes" id="tienda_online">
+                        <a href="./precios.html" class="paquetes-precios">
+                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
+                            <h4>DISEÑO WEB</h4>
+                            <H3>TIENDA ONLINE +</H3>
+                            <H2>AR$ 79.000.-</H2>
+                            <p>
+                                Tu
+                                <b>Tienda Online</b>
+                                será totalmente autoadministrable.
+                                <br><br>
+                                <b>El costo incluye hosting y dominio por 1 año.</b>
+                            </p>
+                            <p class="mas-info">MÁS INFORMACIÓN</p>
+                        </a>
+                    </div>
+        
+                    <div class="servicios-paquetes" id="tienda_online">
+                        <a href="./precios.html" class="paquetes-precios">
+                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
+                            <h4>DISEÑO WEB</h4>
+                            <H3>TIENDA ONLINE ++</H3>
+                            <H2>AR$ 91.000.-</H2>
+                            <p>
+                                Tu
+                                <b>Tienda Online</b>
+                                será totalmente autoadministrable.
+                                <br><br>
+                                <b>El costo incluye hosting y dominio por 1 año.</b>
+                            </p>
+                            <p class="mas-info">MÁS INFORMACIÓN</p>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="#" class="precios-index-paquete">Diseño Web Blog</a>
-                <a href="#" class="precios-index-paquete">Diseño Web Inmobiliario</a>
-                <a href="#" class="precios-index-paquete">Diseño Web Autogestionable</a>
-        </section>
-
-        <section>
-
-            <p>
-                ¿Que es una Landing Page?
-                Una landing page es una página de aterrizaje, diseñada exclusivamente con un objetivo: llamar la atencion de tus visitas y convertirlas en clientes.
-                A diferencia de una Pagina Simple, la Landing Page debe estar enfocada en ser corta y llamativa al publico, con contenido de calidad unico, relevante y consentrado, sin distracciones que alejen al visitante de contactarte via WhatsApp 
-                
-                ¿Por qué crear una landing page?
-                La respuesta es simple: resultados.
-                Una páginas de aterrizaje bien hechas permiten que se tenga una tasa de ventas mucho más grande de lo que tiene un sitio web normal. No son extraños los casos en donde gracias a estas páginas, se aumenta la tasa de ventas en 5 o 10 veces más.
-                
-                Si queres vender un servicio o promocionar algo en particular, esta opcion es para vos. Ponete en contacto para acesorarte sin compromiso y brindar la mejor opcion de pagina web para tu emprendimiento.
-            </p>
-
-        </section>
-
-
-        <section>
-
-            <p>
-                Saber concretamente el tema de tu sitio web y cuál es el objetivo es la base en la cual se apoyará toda la estructura del proyecto.
-
-                Si estas buscando tener un sitio web pero no sabes qué elegir, te planteamos las siguientes preguntas para guiarte:
-                
-                ¿Cuál es el propósito que tendrá el sitio? 
-                ¿Será corporativo? ¿Será un portal de noticias?
-                ¿Queres tener una tienda en línea, o tal vez brindar cursos online?
-                ¿Que buscan tus cliente?
-                
-                Ponete en contacto para acesorarte sin compromiso y brindar la mejor opcion de pagina web para tu emprendimiento.
-            </p>
-
-        </section>
-
-
-
-        <section class="precios-index precios-index-bot">
-            <a href="../precios.html" class="precios-index-todos">Todos los diseños web</a>
-            
-            <a href="#" class="precios-index-paquete">Diseño Web Landing Page</a>
-            <a href="#" class="precios-index-paquete">Diseño Web Simple</a>
-            <a href="#" class="precios-index-paquete">Diseño Web Simple +</a>
-
-            <a href="#" class="precios-index-paquete">Diseño Web Tienda Online</a>
-            <a href="#" class="precios-index-paquete">Diseño Web Tienda Online +</a>
-            <a href="#" class="precios-index-paquete">Diseño Web Tienda Online ++</a>
-
-            <a href="#" class="precios-index-paquete">Diseño Web Blog</a>
-            <a href="#" class="precios-index-paquete">Diseño Web Inmobiliario</a>
-            <a href="#" class="precios-index-paquete">Diseño Web Autogestionable</a>
-    </section>
-
+                <div class="servicios-row row3">
+                    <div class="servicios-paquetes" id="langing_page">
+                        <a href="./precios.html" class="paquetes-precios">
+                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
+                            <h4>DISEÑO WEB</h4>
+                            <H3>BLOG</H3>
+                            <H2>AR$ 38.000.-</H2>
+                            <p>
+                                Ideal para realizar una página web de noticias autoadministrable a tu medida.
+                                <br><br>
+                                <b>El costo incluye hosting y dominio por 1 año.</b>
+                            </p>
+                            <p class="mas-info">MÁS INFORMACIÓN</p>
+                        </a>
+                    </div>
+        
+                    <div class="servicios-paquetes" id="simple">
+                        <a href="./precios.html" class="paquetes-precios">
+                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
+                            <h4>DISEÑO WEB</h4>
+                            <H3>INMOBILIARIO</H3>
+                            <H2>AR$ 33.000.-</H2>
+                            <p>
+                                Portal inmobiliario para autoadministrar sus propiedades de forma sencilla y rapida.
+                                <br><br>
+                                <b>El costo incluye hosting y dominio por 1 año.</b>
+                            </p>
+                            <p class="mas-info">MÁS INFORMACIÓN</p>
+                        </a>
+                    </div>
+        
+                    <div class="servicios-paquetes" id="simple+">
+                        <a href="./precios.html" class="paquetes-precios">
+                            <img class="row-image" src="../public/img/logo_servicios.png" alt="">
+                            <h4>DISEÑO WEB</h4>
+                            <H3>AUTOGESTIONABLE</H3>
+                            <H2>AR$ 45.000.-</H2>
+                            <p>
+                                Podes crear tu negocio en linea administrando hasta 4 secciones y un total de 40 imagenes. Ideal para pequeños negocios que quieren mostrar su producto.
+                                <br><br>
+                                <b>El costo incluye hosting y dominio por 1 año.</b>
+                            </p>
+                            <p class="mas-info">MÁS INFORMACIÓN</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
     </main>
-
-
-
-
-
-
 
     <footer>
         <section class="seccion-footer">
@@ -177,14 +260,16 @@
                     <li>Diseño Web - Simple</li>
                     <li>Diseño Web - Tienda Inicio</li>
                 </ul>
-                <a href="../precios.html">TODOS LOS DISEÑOS</a>
+                <a href="./precios.html">TODOS LOS DISEÑOS</a>
             </div>
         </section>
     </footer>
 
+
+    
     <div>
         <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="whatsapp-button">
-            <img src="../../public/img/WhatsApp.png" width="60px" alt>
+            <img src="../public/img/WhatsApp.png" width="60px" alt>
         </a>
         <button onclick="topFunction()" id="_top-btn" class="scroll-to-top-button" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
         <script>
