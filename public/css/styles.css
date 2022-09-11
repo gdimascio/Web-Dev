@@ -337,6 +337,7 @@ input:focus{
 }
 .servicios-paquetes{
     display: none;
+    border: 2px solid white;
     background-color: white;
     padding: 5vw;
     margin: 5vw 10vw;
@@ -422,6 +423,7 @@ input:focus{
     to {opacity: 1}
 }
 .accordion-active{
+    border: solid #00a1cd 2px;
     background-color: #00a1cd;
     color: white;
     border-top-left-radius: 5px;
@@ -499,8 +501,8 @@ input:focus{
     margin: 50px 5vw;
     flex-direction: column;
     align-items: flex-start;
-    padding: 25px 0;
-    padding-left: 5vw;
+    padding: 25px 3vw 25px 5vw;
+    
     width: 30vw;
 }
 .precios-index-bot{
@@ -512,14 +514,14 @@ input:focus{
 .precios-index-todos{
     text-decoration: none;
     color: #03265c;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 .precios-index-paquete{
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -668,7 +670,15 @@ footer {
         font-size: 18px;
         border: none;
         transition: opacity 0.3s;
+        animation-name: scroll-fade;
+        animation-duration: 1.5s;
+
     }
+    @keyframes scroll-fade {
+        from {opacity: .0} 
+        to {opacity: 70%}
+    }
+    
     .scroll-to-top-button:hover{
         color: #00a1cd;
         width: 50px;
@@ -716,8 +726,8 @@ footer {
     .precios-todos div p{
         margin: 55px 0;
         margin-right: 5vw;
-        /* font-size: 20px; */
-        font-size: 2vw;
+        font-size: 20px;
+        /* font-size: 2vw; */
     }
 
 }
