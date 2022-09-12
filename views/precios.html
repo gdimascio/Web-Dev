@@ -25,6 +25,7 @@
     <title>GD</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
         <div class="header-body-main">
             <div class="header-body-top">
@@ -57,6 +58,7 @@
     </header>
 
     <main>
+        <!-- Inicio -->
         <section class="section1-inicio">
             <div class="section1-titulo">
                 <h2 class="titulo1">Diseños Web</h2>
@@ -64,6 +66,7 @@
             </div>
         </section>
 
+        <!-- Seccion 2: Servicios -->
         <section class="section2-servicios" id="servicios">
             <div class="encabezado-intro">
                 <span></span>
@@ -82,6 +85,7 @@
         </section>
 
         <section class="servicios-precios">
+            <!-- Index top -->
             <section class="precios-index">
                 <div class="precios-index-top">
                     <a href="#servicios" class="precios-index-todos menus" onclick="currentPrecio(1)">Todos nuestros Diseños Web</a>
@@ -96,10 +100,11 @@
         
                     <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(5)">Diseño Web Blog</a>
                     <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(6)">Diseño Web Inmobiliario</a>
-                    <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(7)">Diseño Web Autogestionable</a>    
+                    <!-- <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(7)">Diseño Web Autogestionable</a>     -->
                 </div>
             </section>
-    
+
+            <!-- Todos los Precios -->
             <section class="precios-todos">
                 <div class="paquete precios-intro" >
                     <p>Saber concretamente el tema de tu sitio web y cuál es el objetivo, es la base en la cual se apoyará toda la estructura del proyecto.</p>
@@ -117,11 +122,11 @@
                         <p>Una página de aterrizaje bien hecha permite que se tenga una tasa de ventas mucho más grande de lo que tiene un sitio web normal. No son extraños los casos en donde gracias a estas páginas, se aumenta la tasa de ventas en 5 o 10 veces más.</p>
                         <p>Si querés vender un servicio o promocionar algo en particular, esta opción es para vos. Ponete en contacto para asesorarte sin compromiso y brindar la mejor opción de página web para tu emprendimiento.</p>    
                     </div>
-                    <!-- <div class="paquete-data">
+                    <div class="paquete-data">
                         <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
                         <H3 class="servicios-row-paquete">LANDING PAGE</h3>
                         <H2 class="servicios-row-precio">AR$ 15.000.-</h2>
-                    </div> -->
+                    </div>
                 </div>
 
                 <div class="paquete precios-simple">
@@ -133,11 +138,26 @@
                         <p>Si tu objetivo es publicar datos de contacto, catálogo de productos, tienda electrónica, las últimas noticias de la organización y materiales que ayudan a comprender mejor tus servicios, ésta es la opción para vos.</p>
                         <p><b>Preguntá por el paquete Simple + y mejorá tu página web para que tenga 6 botones e incluya hasta 40 imágenes.</b></p>
                     </div>
-                    <!-- <div class="paquete-data">
-                        <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
-                        <H3 class="servicios-row-paquete">SIMPLE</h3>
-                        <H2 class="servicios-row-precio">AR$ 24.000.-</h2>
-                    </div> -->
+                    <div class="paquete-data carrusel">
+                        <div class="paquete-data-simple fade">
+                            <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                            <H3 class="servicios-row-paquete">SIMPLE</h3>
+                            <H2 class="servicios-row-precio">AR$ 24.000.-</h2>
+                        </div>
+                        <div class="paquete-data-simple+ fade">
+                            <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                            <H3 class="servicios-row-paquete">SIMPLE +</h3>
+                            <H2 class="servicios-row-precio">AR$ 33.000.-</h2>
+                        </div>
+
+                        <div style="text-align:center; align-items:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+            
+
+                    </div>
                 </div>
 
                 <div class="paquete precios-tienda" >
@@ -169,9 +189,9 @@
                     <p>Es una herramienta esencial para toda consultora inmobiliaria, que podrás autogestionar vos mismo.</p>
                 </div>
 
-                <div class="paquete precios-Autogestionable">
+                <!-- <div class="paquete precios-Autogestionable">
                     <p>Diseño Web Autogestionable</p>
-                </div>
+                </div> -->
             </section>
         </section>
 
@@ -179,6 +199,7 @@
 
 
 
+        <!-- Index bot -->
         <section class="precios-index" >
             <div class="precios-index-bot">
                 <a href="#servicios" class="precios-index-todos menus" onclick="currentPrecio(1)">Todos nuestros Diseños Web</a>
@@ -193,7 +214,7 @@
     
                 <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(5)">Diseño Web Blog</a>
                 <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(6)">Diseño Web Inmobiliario</a>
-                <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(7)">Diseño Web Autogestionable</a>    
+                <!-- <a href="#servicios" class="precios-index-paquete menus" onclick="currentPrecio(7)">Diseño Web Autogestionable</a>     -->
             </div>
             
             <script>
@@ -211,6 +232,7 @@
 
 
 
+    <!-- FOOTER -->
     <footer>
         <section class="seccion-footer">
             <div class="footer-titulo">
@@ -240,6 +262,7 @@
         </section>
     </footer>
 
+    <!-- BOTONES -->
     <div>
         <a href="https://wa.me/541155773362?text=Hola!%20Me%20gustaria%20contratar%20tu%20servicio!%20" class="whatsapp-button">
             <img src="../public/img/WhatsApp.png" width="60px" alt>

@@ -672,18 +672,15 @@ footer {
         transition: opacity 0.3s;
         animation-name: scroll-fade;
         animation-duration: 1.5s;
-
     }
     @keyframes scroll-fade {
         from {opacity: .0} 
         to {opacity: 70%}
     }
-    
     .scroll-to-top-button:hover{
         color: #00a1cd;
         width: 50px;
         height: 80px;
-
         transition: background-color 0.2s linear;
         transition: opacity 0.2s linear;
         opacity: 100%;
@@ -728,6 +725,17 @@ footer {
         margin-right: 5vw;
         font-size: 20px;
         /* font-size: 2vw; */
+    }
+    .paquete-data{
+        position: absolute;
+        left: 10px;
+        top: 1200px;
+        margin-left: 5vw;
+        width: 30vw;
+        text-align: center;
+    }
+    .precios-todos{
+        max-height: 900px;
     }
 
 }
