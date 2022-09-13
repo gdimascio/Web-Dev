@@ -56,7 +56,47 @@ function showPrecio(n) {
     for (i = 0; i < paquetes.length; i++) {
         paquetes[i].style.display = "none";  
     }
-    for (i = 0; i < menu.length; i++) {
-    }
     paquetes[precioIndex-1].style.display = "block";  
+    // menu[precioIndex-1].className += " active";
+
+}
+
+
+function currentDotSimple(n) {
+    showDotSimple(dotSimpleIndex = n);
+}
+function showDotSimple(n) {
+    let i;
+    let paquetesSimple = document.getElementsByClassName("paquete-data-simple");
+    let dotsSimple = document.getElementsByClassName("paquete-data-simple-dot");
+    if (n > paquetesSimple.length) {dotSimpleIndex = 1}    
+    if (n < 1) {dotSimpleIndex = paquetesSimple.length}
+    for (i = 0; i < paquetesSimple.length; i++) {
+        paquetesSimple[i].style.display = "none";  
+    }
+    for (i = 0; i < dotsSimple.length; i++) {
+        dotsSimple[i].className = dotsSimple[i].className.replace(" active", "");
+    }
+    paquetesSimple[dotSimpleIndex-1].style.display = "block";  
+    dotsSimple[dotSimpleIndex-1].className += " active";
+}
+
+
+function currentDotTienda(n) {
+    showDotTienda(dotTiendaIndex = n);
+}
+function showDotTienda(n) {
+    let i;
+    let paquetesTienda = document.getElementsByClassName("paquete-data-tienda");
+    let dotsTienda = document.getElementsByClassName("paquete-data-tienda-dot");
+    if (n > paquetesTienda.length) {dotTiendaIndex = 1}    
+    if (n < 1) {dotTiendaIndex = paquetesTienda.length}
+    for (i = 0; i < paquetesTienda.length; i++) {
+        paquetesTienda[i].style.display = "none";  
+    }
+    for (i = 0; i < dotsTienda.length; i++) {
+        dotsTienda[i].className = dotsTienda[i].className.replace(" active", "");
+    }
+    paquetesTienda[dotTiendaIndex-1].style.display = "block";  
+    dotsTienda[dotTiendaIndex-1].className += " active";
 }

@@ -547,6 +547,25 @@ input:focus{
     text-align: center;
     margin: 50px 0;
 }
+.paquete-data-simple-dot, .paquete-data-tienda-dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .paquete-data-simple-dot:hover, .paquete-data-tienda-dot:hover {
+    background-color: #717171;
+}
+.paquete-data-simple{
+    display: none;
+}
+.paquete-data-tienda{
+    display: none;
+}
 
 
 
@@ -735,9 +754,8 @@ footer {
         text-align: center;
     }
     .precios-todos{
-        max-height: 900px;
+        height: 900px;
     }
-
 }
 
 /*_______________________________________________________________*/

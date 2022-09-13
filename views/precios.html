@@ -111,7 +111,7 @@
                     <p>Ponete en <b>contacto</b> para acesorarte sin compromiso y brindar la mejor opción de página web para tu emprendimiento.</p>    
                 </div>
 
-                <div class="paquete precios-landing-page" id="landing-page">
+                <div class="paquete precios-landing-page">
                     <div>
                         <p class="precios-todos-pregunta">¿Qué es una <b>Landing Page</b>?</p>
                         <p>Una landing page es una página de aterrizaje, diseñada exclusivamente con un objetivo: llamar la atención de tus visitas y convertirlas en clientes.</p>
@@ -144,19 +144,21 @@
                             <H3 class="servicios-row-paquete">SIMPLE</h3>
                             <H2 class="servicios-row-precio">AR$ 24.000.-</h2>
                         </div>
-                        <div class="paquete-data-simple+ fade">
+                        <div class="paquete-data-simple fade">
                             <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
                             <H3 class="servicios-row-paquete">SIMPLE +</h3>
                             <H2 class="servicios-row-precio">AR$ 33.000.-</h2>
                         </div>
 
                         <div style="text-align:center; align-items:center">
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span> 
+                            <span class="paquete-data-simple-dot" onclick="currentDotSimple(1)"></span> 
+                            <span class="paquete-data-simple-dot" onclick="currentDotSimple(2)"></span> 
                         </div>
-            
 
+                        <script>
+                            let dotSimpleIndex = 1;
+                            showDotSimple(dotSimpleIndex);
+                        </script>
                     </div>
                 </div>
 
@@ -168,11 +170,34 @@
                         <p>Vas a poder subir tus productos, editarlos, modificarlos o simplemente bajarlos vos mismo gracias a nuestro diseño <b>autogestionable</b>.</p>
                         <p><b>Preguntá por el paquete Tienda + y mejorá tu página web para que incluya hasta 40 productos o el paquete Tienda ++ para que incluya 60 productos.</b></p>
                     </div>
-                    <!-- <div class="paquete-data">
-                        <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
-                        <H3 class="servicios-row-paquete">SIMPLE</h3>
-                        <H2 class="servicios-row-precio">AR$ 24.000.-</h2>
-                    </div> -->
+                    <div class="paquete-data carrusel">
+                        <div class="paquete-data-tienda fade">
+                            <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                            <H3 class="servicios-row-paquete">TIENDA</h3>
+                            <H2 class="servicios-row-precio">AR$ 52.000.-</h2>
+                        </div>
+                        <div class="paquete-data-tienda fade">
+                            <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                            <H3 class="servicios-row-paquete">TIENDA +</h3>
+                            <H2 class="servicios-row-precio">AR$ 79.000.-</h2>
+                        </div>
+                        <div class="paquete-data-tienda fade">
+                            <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                            <H3 class="servicios-row-paquete">TIENDA ++</h3>
+                            <H2 class="servicios-row-precio">AR$ 91.000.-</h2>
+                        </div>
+
+                        <div style="text-align:center; align-items:center">
+                            <span class="paquete-data-tienda-dot" onclick="currentDotTienda(1)"></span> 
+                            <span class="paquete-data-tienda-dot" onclick="currentDotTienda(2)"></span> 
+                            <span class="paquete-data-tienda-dot" onclick="currentDotTienda(3)"></span> 
+                        </div>
+
+                        <script>
+                            let dotTiendaIndex = 1;
+                            showDotTienda(dotTiendaIndex);
+                        </script>
+                    </div>
                 </div>
 
                 <div class="paquete precios-blog">
@@ -181,12 +206,24 @@
                         <p>En tu Blog, o Weblog, podrás publicar cualquier cosa que desees compartir con otros. Podrás actualizar periódicamente y recopilar cronológicamente textos y artículos de uno o varios autores (el más reciente aparece primero).</p>
                         <p>Además, tus lectores podrán dejar sus comentarios en tus artículos.</p>
                     </div>
+                    <div class="paquete-data">
+                        <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                        <H3 class="servicios-row-paquete">BLOG</h3>
+                        <H2 class="servicios-row-precio">AR$ 38.000.-</h2>
+                    </div>
                 </div>
 
                 <div class="paquete precios-inmobiliario">
-                    <p class="precios-todos-pregunta">¿Qué es una página <b>Inmobiliaria</b>?</p>
-                    <p>Un portal inmobiliario es un sitio web orientado a ofrecer recursos y servicios relacionados a los inmuebles que ofrezca tu consultora de forma que permita la información del mercado a partir de listados de propiedades en venta o alquiler.</p>
-                    <p>Es una herramienta esencial para toda consultora inmobiliaria, que podrás autogestionar vos mismo.</p>
+                    <div>
+                        <p class="precios-todos-pregunta">¿Qué es una página <b>Inmobiliaria</b>?</p>
+                        <p>Un portal inmobiliario es un sitio web orientado a ofrecer recursos y servicios relacionados a los inmuebles que ofrezca tu consultora de forma que permita la información del mercado a partir de listados de propiedades en venta o alquiler.</p>
+                        <p>Es una herramienta esencial para toda consultora inmobiliaria, que podrás autogestionar vos mismo.</p>
+                    </div>
+                    <div class="paquete-data">
+                        <h4 class="servicios-row-diseño">DISEÑO WEB</h4>
+                        <H3 class="servicios-row-paquete">BLOG</h3>
+                        <H2 class="servicios-row-precio">AR$ 33.000.-</h2>
+                    </div>
                 </div>
 
                 <!-- <div class="paquete precios-Autogestionable">
