@@ -60,7 +60,9 @@ main{
     font-size: 18px;
     font-weight: bold;
     display: block;
+    margin-left: 2vw;
 }
+
 .whatsapp-button{
     display: inline-block;
     width: 50px;
@@ -207,9 +209,6 @@ input, textarea  {
 }
 input:focus{
     font-weight: bold;
-}
-.section1-formulario button{
-    margin-left: 10px;
 }
 .section1-items{
     /* border: 1px red solid; */
