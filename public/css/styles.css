@@ -188,8 +188,8 @@ main{
     align-items: flex-start;
     padding: 30px 3vw;
     margin-bottom: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 .section1-formulario div{
     display: flex;
@@ -639,12 +639,13 @@ footer {
     }
     .header-body-navbar{
         display: inline-block;
-        width: 50vw ;
+        width: 40vw;
     }
     .header-body-navbar ul{
         display: flex;
         list-style: none;
         justify-content: space-between;
+        max-width: 40vw;
     }
     .header-body-navbar a{
         text-decoration: none;
@@ -668,7 +669,22 @@ footer {
         text-decoration: none;
         line-height: 1.2;
         z-index: 100;
+        animation: wiggle ease;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay: 4s;
     }
+    @keyframes wiggle {
+        0% { transform:translate(0,0) }
+        1.78571% { transform:translate(5px,0) }
+        3.57143% { transform:translate(0,0) }
+        5.35714% { transform:translate(5px,0) }
+        7.14286% { transform:translate(0,0) }
+        8.92857% { transform:translate(5px,0) }
+        10.71429% { transform:translate(0,0) }
+        100% { transform:translate(0,0) }
+    }
+
     .scroll-to-top-button{
         width: 50px;
         height: 80px;
@@ -755,6 +771,12 @@ footer {
     .precios-todos{
         height: 900px;
     }
+    .section1-formulario{
+        max-width: 40vw;
+    }
+    input, textarea{
+        max-width: 30vw;
+    }
 }
 
 /*_______________________________________________________________*/
@@ -768,7 +790,12 @@ footer {
     .header-body-top h2{
         font-size: 18px;
     }
-.servicios-row{
+    .header-body-navbar{
+        width: 30vw;
+        max-width: 40vw;
+
+    }
+    .servicios-row{
         margin: 5vh 10vw;
         flex-direction: row;
         width: 80vw;
@@ -795,6 +822,7 @@ footer {
         line-height: 1.2;
         z-index: 100;
     }
+
     .servicios-buttons{
         display: flex;
         flex-direction: row;
