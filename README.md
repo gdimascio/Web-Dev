@@ -2,6 +2,7 @@
 Pagina de venta de servicios Web
 
 
+TODO
 - Servicios: logo: analizar imagen
 - Servicios: Mas Informacion: anchor a pagina informativa
 
