@@ -152,7 +152,9 @@ main{
     padding: 10px;
 }
 .section1-titulo{
-    margin: 40px 0;
+    padding: 40px 0;
+    background-color: #CCC;
+    text-align: center;
 }
 /* TODO: agragar animacion al background-color: #212529*/
 .titulo1{
@@ -187,9 +189,7 @@ main{
     flex-direction: column;
     align-items: flex-start;
     padding: 30px 3vw;
-    margin-bottom: 30px;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin: 30px 15vw 30px 10vw;
 }
 .section1-formulario div{
     display: flex;
@@ -244,6 +244,7 @@ input:focus{
 .encabezado-intro{
     display: flex;
     align-items: center;
+    margin-top: 30px;
     margin-left: 10vw;
 }
 .encabezado-intro span{
@@ -409,6 +410,12 @@ input:focus{
     font-weight: 700;
     opacity: 100%;
 }
+.accordion::after{
+    content: '+';
+    position: absolute;
+    right: 22vw;
+    /* transform: rotate(0.12turn); */
+}    
 .accordion:hover{
     animation-name: accordion;
     animation-duration: 0.5s;
@@ -457,7 +464,6 @@ input:focus{
 
 /*_______________________________________________________________*/
 .seccion4-metodologia{
-    margin: 30px 0;
     margin-bottom: 40px;
 }
 .metodologia-checkbox{
