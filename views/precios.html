@@ -151,13 +151,14 @@
                         </div>
 
                         <div style="text-align:center; align-items:center">
-                            <span class="paquete-data-simple-dot" onclick="currentDotSimple(1)"></span> 
-                            <span class="paquete-data-simple-dot" onclick="currentDotSimple(2)"></span> 
+                            <span class="paquete-data-simple-dot" onclick="getClassSimple();currentDot(1)"></span> 
+                            <span class="paquete-data-simple-dot" onclick="getClassSimple();currentDot(2)"></span> 
                         </div>
 
                         <script>
-                            let dotSimpleIndex = 1;
-                            showDotSimple(dotSimpleIndex);
+                            let dotIndex = 1;
+                            getClassSimple();
+                            showDot(dotIndex);
                         </script>
                     </div>
                 </div>
@@ -188,14 +189,15 @@
                         </div>
 
                         <div style="text-align:center; align-items:center">
-                            <span class="paquete-data-tienda-dot" onclick="currentDotTienda(1)"></span> 
-                            <span class="paquete-data-tienda-dot" onclick="currentDotTienda(2)"></span> 
-                            <span class="paquete-data-tienda-dot" onclick="currentDotTienda(3)"></span> 
+                            <span class="paquete-data-tienda-dot" onclick="getClassTienda();currentDot(1)"></span> 
+                            <span class="paquete-data-tienda-dot" onclick="getClassTienda();currentDot(2)"></span> 
+                            <span class="paquete-data-tienda-dot" onclick="getClassTienda();currentDot(3)"></span> 
                         </div>
 
                         <script>
-                            let dotTiendaIndex = 1;
-                            showDotTienda(dotTiendaIndex);
+                            dotIndex = 1;
+                            getClassTienda();
+                            showDot(dotIndex);
                         </script>
                     </div>
                 </div>
@@ -258,7 +260,7 @@
                 let precioIndex = 1;
                 showPrecio(precioIndex);
             </script>
-    </section>
+        </section>
 
 
     </main>

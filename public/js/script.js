@@ -58,45 +58,37 @@ function showPrecio(n) {
     }
     paquetes[precioIndex-1].style.display = "block";  
     // menu[precioIndex-1].className += " active";
-
 }
 
 
-function currentDotSimple(n) {
-    showDotSimple(dotSimpleIndex = n);
+
+let paquetesP;
+let dots;
+function getClassSimple(){
+    paquetesP = document.getElementsByClassName("paquete-data-simple");
+    dots = document.getElementsByClassName("paquete-data-simple-dot");
 }
-function showDotSimple(n) {
+function getClassTienda(){
+    paquetesP = document.getElementsByClassName("paquete-data-tienda");
+    dots = document.getElementsByClassName("paquete-data-tienda-dot");
+}
+function currentDot(n) {
+    showDot(dotIndex = n);
+}
+function showDot(n) {
     let i;
-    let paquetesSimple = document.getElementsByClassName("paquete-data-simple");
-    let dotsSimple = document.getElementsByClassName("paquete-data-simple-dot");
-    if (n > paquetesSimple.length) {dotSimpleIndex = 1}    
-    if (n < 1) {dotSimpleIndex = paquetesSimple.length}
-    for (i = 0; i < paquetesSimple.length; i++) {
-        paquetesSimple[i].style.display = "none";  
+    if (n > paquetesP.length) {dotIndex = 1}    
+    if (n < 1) {dotIndex = paquetesP.length}
+    for (i = 0; i < paquetesP.length; i++) {
+        paquetesP[i].style.display = "none";  
     }
-    for (i = 0; i < dotsSimple.length; i++) {
-        dotsSimple[i].className = dotsSimple[i].className.replace(" active", "");
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-    paquetesSimple[dotSimpleIndex-1].style.display = "block";  
-    dotsSimple[dotSimpleIndex-1].className += " active";
+    paquetesP[dotIndex-1].style.display = "block";  
+    dots[dotIndex-1].className += " active";
 }
 
 
-function currentDotTienda(n) {
-    showDotTienda(dotTiendaIndex = n);
-}
-function showDotTienda(n) {
-    let i;
-    let paquetesTienda = document.getElementsByClassName("paquete-data-tienda");
-    let dotsTienda = document.getElementsByClassName("paquete-data-tienda-dot");
-    if (n > paquetesTienda.length) {dotTiendaIndex = 1}    
-    if (n < 1) {dotTiendaIndex = paquetesTienda.length}
-    for (i = 0; i < paquetesTienda.length; i++) {
-        paquetesTienda[i].style.display = "none";  
-    }
-    for (i = 0; i < dotsTienda.length; i++) {
-        dotsTienda[i].className = dotsTienda[i].className.replace(" active", "");
-    }
-    paquetesTienda[dotTiendaIndex-1].style.display = "block";  
-    dotsTienda[dotTiendaIndex-1].className += " active";
-}
+
+
