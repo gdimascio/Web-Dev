@@ -61,21 +61,24 @@ function showPrecio(n) {
 }
 
 
-
-let paquetesP;
-let dots;
+const paquete_data = {
+    data: "",
+    dot: ""
+}
 function getClassSimple(){
-    paquetesP = document.getElementsByClassName("paquete-data-simple");
-    dots = document.getElementsByClassName("paquete-data-simple-dot");
+    paquete_data.data = document.getElementsByClassName("paquete-data-simple");
+    paquete_data.dot = document.getElementsByClassName("paquete-data-simple-dot");
 }
 function getClassTienda(){
-    paquetesP = document.getElementsByClassName("paquete-data-tienda");
-    dots = document.getElementsByClassName("paquete-data-tienda-dot");
+    paquete_data.data = document.getElementsByClassName("paquete-data-tienda");
+    paquete_data.dot = document.getElementsByClassName("paquete-data-tienda-dot");
 }
 function currentDot(n) {
     showDot(dotIndex = n);
 }
 function showDot(n) {
+    let paquetesP = paquete_data.data;
+    let dots = paquete_data.dot;
     let i;
     if (n > paquetesP.length) {dotIndex = 1}    
     if (n < 1) {dotIndex = paquetesP.length}
