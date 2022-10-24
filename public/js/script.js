@@ -65,11 +65,11 @@ const paquete_data = {
     data: "",
     dot: ""
 }
-function getClassSimple(){
+function SetClassSimple(){
     paquete_data.data = document.getElementsByClassName("paquete-data-simple");
     paquete_data.dot = document.getElementsByClassName("paquete-data-simple-dot");
 }
-function getClassTienda(){
+function SetClassTienda(){
     paquete_data.data = document.getElementsByClassName("paquete-data-tienda");
     paquete_data.dot = document.getElementsByClassName("paquete-data-tienda-dot");
 }
