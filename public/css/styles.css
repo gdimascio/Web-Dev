@@ -154,7 +154,12 @@ main{
 .section1-titulo{
     padding: 40px 0;
     background-color: #CCC;
-    text-align: center;
+    /* text-align: center; */
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* TODO: agragar animacion al background-color: #212529*/
 .titulo1{
@@ -290,7 +295,7 @@ input:focus{
 }
 .prev, .next{ 
     position: absolute;
-    top: 2100px;
+    top: 1600px;
     left: 0;
     color: #03265c;
     width: auto;
@@ -464,13 +469,15 @@ input:focus{
 
 /*_______________________________________________________________*/
 .seccion4-metodologia{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    min-height: calc(100vh - 280px);
 }
 .metodologia-checkbox{
     padding: 20px;
     text-align: center;
 }
 .metodologia-checkbox-topic{
+    display: none;
     padding: 20px 0;
 }
 .metodologia-checkbox-topic i{
@@ -737,16 +744,12 @@ footer {
     .dot{
         display: none;
     }
-    .prev, .next{
-        display: none;
-    }
-    .servicios-paquetes{
-        display: flex !important;
-    }
     .metodologia-checkbox{
         display: flex;
         justify-content: space-around;
-    }
+        align-items: center;
+        min-height: 30vh;
+}
     .metodologia-checkbox-topic{
         padding: 20px 10px;
         max-width: 400px;
@@ -810,9 +813,13 @@ footer {
     .servicios-paquetes{
         margin: 0 auto;
         width: 25vw;
+        display: flex !important;
     }
     .row-image{
         width: 10vw;
+    }
+    .metodologia-checkbox-topic{
+        display: block !important;
     }
     .whatsapp-button{
         display: inline-block;

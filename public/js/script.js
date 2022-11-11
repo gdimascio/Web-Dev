@@ -21,6 +21,19 @@ function burger_menu(){
     }
 }
 
+function showMetodo(){
+    let metodos = document.getElementsByClassName("metodologia-checkbox-topic");
+    if(metodoIndex > metodos.length-1){metodoIndex = 0; 
+    }
+    for (i = 0; i < metodos.length; i++) {
+        metodos[i].style.display = "none";  
+    }
+    metodos[metodoIndex].style.display = "block";
+    setTimeout("showMetodo(metodoIndex++)", time);
+}
+
+
+
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
@@ -50,7 +63,7 @@ function currentPrecio(n) {
 function showPrecio(n) {
     let i;
     let paquetes = document.getElementsByClassName("paquete");
-    let menu = document.getElementsByClassName("menus");
+    // let menu = document.getElementsByClassName("menus");
     if (n > paquetes.length) {precioIndex = 1}    
     if (n < 1) {precioIndex = paquetes.length}
     for (i = 0; i < paquetes.length; i++) {
