@@ -21,16 +21,17 @@ function burger_menu(){
     }
 }
 
-function showMetodo(){
-    let metodos = document.getElementsByClassName("metodologia-checkbox-topic");
-    if(metodoIndex > metodos.length-1){metodoIndex = 0; 
-    }
-    for (i = 0; i < metodos.length; i++) {
-        metodos[i].style.display = "none";  
-    }
-    metodos[metodoIndex].style.display = "block";
-    setTimeout("showMetodo(metodoIndex++)", time);
-}
+/* script reemplazado por animacion */
+// function showMetodo(){
+//     let metodos = document.getElementsByClassName("metodologia-checkbox-topic");
+//     if(metodoIndex > metodos.length-1){metodoIndex = 0; 
+//     }
+//     for (i = 0; i < metodos.length; i++) {
+//         metodos[i].style.display = "none";  
+//     }
+//     metodos[metodoIndex].style.display = "block";
+//     setTimeout("showMetodo(metodoIndex++)", time);
+// }
 
 
 

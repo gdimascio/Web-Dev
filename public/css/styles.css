@@ -155,7 +155,8 @@ main{
     padding: 40px 0;
     background-color: #CCC;
     /* text-align: center; */
-    height: 20vh;
+    /* height: 20vh; */
+    min-height: calc(50vh - 280px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -475,11 +476,36 @@ input:focus{
 .metodologia-checkbox{
     padding: 20px;
     text-align: center;
+    /******************************************/
+    height: 250px;
+    position: relative;
+    overflow: hidden;
 }
 .metodologia-checkbox-topic{
-    display: none;
+    /* display: none; */
+    display: block;
     padding: 20px 0;
+    /******************************************/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    animation-name: autoplay;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+.metodologia-checkbox > *:nth-child(1) {animation-delay: 0s}
+.metodologia-checkbox > *:nth-child(2) {animation-delay: 4s}
+.metodologia-checkbox > *:nth-child(3) {animation-delay: 8s}
+
+@keyframes autoplay {
+    0% {top: 100%}
+    4% {top: 0%}
+    33.33% {top: 0%}
+    37.33% {top: -100%}
+    100% {top: -100%}
+}
+
 .metodologia-checkbox-topic i{
     font-size: 50px;
     padding-bottom: 20px;
