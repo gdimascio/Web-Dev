@@ -843,7 +843,13 @@ footer {
     .row-image{
         width: 10vw;
     }
+    .metodologia-checkbox{
+        position: static;
+        overflow: visible;
+}
     .metodologia-checkbox-topic{
+        position: static;
+        animation-name: none;
         display: block !important;
     }
     .whatsapp-button{
