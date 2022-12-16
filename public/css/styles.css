@@ -179,7 +179,7 @@ main{
     background-attachment: fixed;
     background-size: cover;
     align-items: center;
-    width: 100vw;
+    /* width: 99.2vw; */
     background-position: center;
 }
 /* TODO: agragar animacion al background-color: #212529*/
