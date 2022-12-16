@@ -572,6 +572,8 @@ input:focus{
     padding: 25px 3vw 25px 5vw;
     
     width: 30vw;
+    border-radius: 5px;
+
 }
 .precios-index-bot{
     margin: 50px 10vw;
