@@ -7,8 +7,9 @@
     list-style: none;
     font-family: sans-serif;
 }
-a{
+* a{
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 body{
     font-family: 'Barlow', sans-serif;
@@ -100,7 +101,7 @@ main{
 /*_______________________________________________________________*/
 .header-body-main{
     /* margin: 20px 20px 10px 20px; */
-    margin: 20px 10vw 10px 10vw;
+    padding: 20px 10vw 10px 10vw;
     display: flex;
     justify-content: space-between;
 }
@@ -145,17 +146,38 @@ main{
     padding: 20px 15%;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
     height: 150px;
+}
+.burger-links ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .burger-links a{
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
-.burger-links a:hover{
+.burger-links ul:hover a{
+    color: #0002;
+}
+.burger-links li:hover a{
     color: #03265c;
 }
 
+
+
+/* 
+.header-body-navbar ul:hover a{
+    color: #0002;
+}
+.header-body-navbar li:hover a{
+    color: #00a1cd;
+}
+ */
 
 /*_______________________________________________________________*/
 .section1-contacto{
@@ -504,13 +526,12 @@ input:focus{
 
 /*_______________________________________________________________*/
 .seccion4-metodologia{
-    margin-bottom: 30px;
-    min-height: calc(100vh - 280px);
+    /* margin-bottom: 30px; */
+    min-height: calc(100vh - 160px);
 }
 .metodologia-checkbox{
     padding: 20px;
     text-align: center;
-    /******************************************/
     height: 250px;
     position: relative;
     overflow: hidden;
@@ -519,7 +540,6 @@ input:focus{
     /* display: none; */
     display: block;
     padding: 20px 0;
-    /******************************************/
     position: absolute;
     top: 100%;
     animation-name: autoplay;
@@ -755,6 +775,8 @@ footer {
     .header-body-navbar{
         display: inline-block;
         width: 40vw;
+        z-index: 0;
+        overflow: hidden;
     }
     .header-body-navbar ul{
         display: flex;
@@ -762,13 +784,21 @@ footer {
         justify-content: space-between;
         max-width: 40vw;
     }
+    .header-body-navbar li{
+        text-align: center;
+    }
     .header-body-navbar a{
         text-decoration: none;
         color: black;
         font-size: 20px;
         font-weight: 600;
+        display: inline-flex;
+        transition: 0.5s;
     }
-    .header-body-navbar a:hover{
+    .header-body-navbar ul:hover a{
+        color: #0002;
+    }
+    .header-body-navbar li:hover a{
         color: #00a1cd;
     }
     .whatsapp-button{
