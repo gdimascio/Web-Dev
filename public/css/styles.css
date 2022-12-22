@@ -4,6 +4,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
 }
 a{
     scroll-behavior: smooth;
@@ -20,6 +22,7 @@ main{
 /* .section1-contacto{display: none !important;} */
 /* .section2-servicios{display: none !important;} */
 /* .section3-beneficios{display: none !important;} */
+/* .seccion4-metodologia{display: none !important;} */
 /* .seccion-footer{display: none !important;} */
 
 /* Edicion de botones */
@@ -648,14 +651,14 @@ footer {
 .seccion-footer{
     margin: 0 10vw;
     padding: 30px 0;
-    color: white;
+    /* color: white; */
 }
 .seccion-footer ul{
     list-style: none;
 }
 .seccion-footer a{
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 .footer-titulo{
     opacity: 80%;
@@ -667,7 +670,7 @@ footer {
 .footer-titulo h6{
     font-size: 22px;
 }
-.links {
+/* .links {
     margin: 15px;
     margin-top: 20px;
     opacity: 80%;
@@ -683,7 +686,48 @@ footer {
 }
 .algunos-servicios{
     display: none;
+} */
+
+.redes{
+    margin: auto;
+    padding: 1.5em 3em;
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
 }
+.red{
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 2em;
+    box-shadow: 6px 6px 0px -2px #92a8d3, 
+    -6px -6px 20px -10px #ffffff;
+    text-align: center;
+    transition: box-shadow .5s, width .5s;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #dae2f1;
+    z-index: 0;
+}
+.icon{
+    font-size: 1.8rem;
+    line-height: 60px;
+    min-width: 60px;
+    transition: color 1s;
+}
+.red:hover{
+    box-shadow: 6px 6px 10px -2px hsl(220, 43%, 75%), 
+    -6px -6px 10px -2px hsl(0, 0%, 100%), 6px 6px 10px -2px hsl(220, 43%, 80%) inset, 
+    -6px -6px 10px -2px hsl(0, 0%, 100%) inset;
+    border: 2px solid hsl(220, 45%, 90%);
+    color: var(--color); 
+    width: 150px;
+}
+
+
 
 
 
