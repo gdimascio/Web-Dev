@@ -669,6 +669,10 @@ footer {
     background-color:#183f72;
 }
 .seccion-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 10vw;
     padding: 30px 0;
     /* color: white; */
@@ -690,9 +694,9 @@ footer {
 .footer-titulo h6{
     font-size: 22px;
 }
-/* .links {
-    margin: 15px;
-    margin-top: 20px;
+.links {
+    /* margin: 15px; */
+    /* margin-top: 20px; */
     opacity: 80%;
     font-size: 20px;
 }
@@ -704,17 +708,18 @@ footer {
 .links i{
     padding: 5px;
 }
-.algunos-servicios{
+/* .algunos-servicios{
     display: none;
 } */
 
 .redes{
-    margin: auto;
-    padding: 1.5em 3em;
+    /* margin: auto; */
+    /* padding: 1.5em 3em; */
     display: flex;
-    gap: 1.5em;
+    /* gap: 1.5em; */
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .red{
     min-width: 60px;
